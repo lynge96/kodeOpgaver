@@ -1,15 +1,15 @@
 <head>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a href="index.html">Tilbage til forsiden</a>
     <br>
     <svg width="1000" height="1000">
         <!--smileyStart-->
-            <circle cx="150" cy="150" r="75" fill="white" stroke="black"/>
-            <circle cx="125" cy="125" r="15" fill="white" stroke="black"/>
-            <circle cx="175" cy="125" r="15" fill="white" stroke="black"/>
-            <line x1="115" y1="185" x2="185" y2="185" stroke="black"/>
+            <circle cx="150" cy="150" r="75" fill="rgba(0,0,0,0)" stroke="black" stroke-width="4"/>
+            <circle cx="125" cy="125" r="15" fill="rgba(0,0,0,0)" stroke="black" stroke-width="2"/>
+            <circle cx="175" cy="125" r="15" fill="rgba(0,0,0,0)" stroke="black" stroke-width="2"/>
+            <line x1="115" y1="185" x2="185" y2="185" stroke="black" stroke-width="2"/>
         <!--smileySlut-->
 
         <!--firkantCeptionStart-->
@@ -37,12 +37,17 @@
             <circle cx="450" cy="350" r="80" fill="orange"/>
             <circle cx="450" cy="330" r="8" fill="white"/>
             <polygon points="450,350 530,310 530,390" style="fill:white"/>
+            <path id="lineAB" d="M450 350 L522 315" stroke="red" stroke-width="2px"/>
+            <path id="lineAC" d="M450 350 L522 385" stroke="red" stroke-width="2px"/>
+            <path d="M 450 350 L 522 315 c 522 385" stroke="green" stroke-width="2px" />
+            
         <!--pacManSlut-->
-
+            
         <!--hjerteStart-->
-            <circle cx="650" cy="300" r="40" fill="red"/>
-            <circle cx="730" cy="300" r="40" fill="red"/>
-            <path d="M610 300 L770 300 L690 450 Z" fill="red"/>
+            <circle cx="655" cy="300" r="40" fill="red"/>
+            <circle cx="725" cy="300" r="40" fill="red"/>
+            <circle cx="690" cy="340" r="40" fill="red"/>
+            <path d="M621 320 L759 320 L690 430 Z" fill="red"/>
         <!--hjerteSlut-->
     </svg>
 </body>

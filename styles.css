@@ -1,0 +1,64 @@
+h1, h2 {
+    background-color: rgba(87, 78, 76, 0.274);
+    color: rgb(237, 237, 237);
+    font-family: sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+table {
+    color:rgb(101, 150, 255);
+    background-image: url("csgo.jpg");
+}
+body {
+    background-color: #161B22;
+    margin: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-image:linear-gradient(to bottom left, #161B22, rgba(44, 44, 126, 0.63));
+}
+a:link {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:visited {
+    color:rgb(101, 150, 255);
+}
+a:hover {
+    color:rgb(247, 232, 23);
+    text-decoration: underline; 
+}
+a:active {
+    color: wheat;
+}
+td {
+    text-align: center;
+    color: rgb(221, 211, 66);
+    font-size: 24px;
+}
+th {
+    font: bold;
+    font-size: 32px;
+    color:rgb(48, 226, 125);
+}
+.overskrift {
+    background-color: rgba(112, 128, 144, 0.205);
+}
+#rubrik {
+    background-color: rgba(70, 131, 180, 0.205);
+}
+
+
+table, th, td {
+    border: 5px solid rgba(238, 215, 142, 0.849);
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th, td {
+    padding: 15px;
+}
+tr:nth-child(even) {
+    background-color: rgba(222, 184, 135, 0);
+}
+tr:nth-child(odd){
+    background-color: rgba(95, 158, 160, 0);
+}

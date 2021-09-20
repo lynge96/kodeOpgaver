@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css">
     <title>Cat Homepage</title>
      <script>
          function changeColor(){
              document.body.style.backgroundColor = "#e3bad1";
          }
     </script>
-    <style>
-        h1, h2 {
-            background-color: rgb(167, 66, 53);
-            color: rgb(161, 235, 167)
-        }
-        body {
-            background-color: rgb(207, 196, 175);
-            margin: 50px;
-        }
-    </style>
   </head>
-  <body> 
-    <h1>Welcome to my homepage</h1>
-    <p><h2>It's about cats!</h2></p>
+  <body>
+    <h1 class="overskrift">Welcome to my homepage</h1>
+    <p><h2 id="rubrik">It's about cats!</h2></p>
     <p><h2>My list of cats include:</h2></p>
     <ul>
         <li><a href="https://en.wikipedia.org/wiki/Persian_cat">Persian cat</a></li>
@@ -28,24 +19,8 @@
         <li><a href="https://da.wikipedia.org/wiki/Maine_Coon">Maine Coon</a></li>
         <li><a href="https://en.wikipedia.org/wiki/Norwegian_Forest_cat">Norwegian Forest cat</a></li>
     </ul>
-    <style>
-        table, th, td {
-        border: 2px solid rgba(151, 67, 27, 0.788);
-        border-collapse: collapse;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-        th, td {
-        padding: 15px;
-    }
-        tr:nth-child(even) {
-            background-color: rgba(222, 184, 135, 0.281);
-    }
-        tr:nth-child(odd){
-            background-color: rgba(95, 158, 160, 0.295);
-        }
-    </style>
     <h2>CSGO Teams</h2>
-    <table style="width:100%">
+    <table id="tabel" style="width:100%">
         <tr>
             <th style="width: 15%">Logo</th>
             <th>Hold</th>
@@ -53,25 +28,26 @@
             <th>Nation</th>
         </tr>
         <tr>
-            <td><a href="navi.html"><img src="Navi.png" style="width: 100%" style="height: 100%" /></a></td>  
+            <td><a href="navi.html"><img class="pnger" src="Navi.png" style="width: 100%" style="height: 100%" /></a></td>  
             <td>Navi</td>
             <td>S1mple, Boombl4, Electronic, b1t, Perfecto</td>
             <td>Ukraine og Rusland</td>
         </tr>
         <tr>
-            <td><a href="og.html"><img src="OG.png" style="width: 100%" style="height: 100%" /></a></td>
+            <td><a href="og.html"><img class="pnger" src="OG.png" style="width: 100%" style="height: 100%" /></a></td>
             <td>OG</td>
             <td>Valde, Aleksib, niko, mantuu, flameZ</td>
             <td>Danmark, Finland, Polen og Isreal</td>
         </tr>
         <tr>
-            <td><a href="complexity.html"><img src="Complexity.png" style="width: 100%" style="height: 100%" /></a></td>
+            <td><a href="complexity.html"><img class="pnger" src="Complexity.png" style="width: 100%" style="height: 100%" /></a></td>
             <td>Complexity</td>
             <td>jks, es3tag, k0nfig, poizon, blameF</td>
             <td>Australien, Danmark, Ungarn</td>
         </tr>
     </table> 
     <button onclick="changeColor()">Tryk mig!</button>
+    <p><a href="svg.html">SVG Kunst</a></p>
   </body>
 </html>
 

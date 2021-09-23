@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flot grafik</title>
+  <script src="script.js"></script>
+  <style>
+    svg {
+      border: 2px solid black
+    }
+  </style>
+</head>
+<body> 
+
+  <svg id="grafik" width="500" height="500"></svg>
+
+  <script>
+    // I dette script-tag skal du skrive din egen JavaScript-kode!
+    let offsetX = 5;
+    let offsetY = 5;
+    //let scaling = 2;
+    // Smiley
+    drawCircle(250 + offsetX, 250 + offsetY, 150, "white");
+    drawCircle(210 + offsetX, 210 + offsetY, 20, "white");
+    drawCircle(290 + offsetX, 210 + offsetY, 20, "white");
+    drawLine(170 + offsetX, 300 + offsetY, 330 + offsetX, 300 + offsetY, "black");
+    // Hat
+    drawLine(100 + offsetX, 130 + offsetY, 400 + offsetX, 130 + offsetY, "black");
+    drawBox(150 + offsetX, 70 + offsetY, 59, 200, "black");
+
+
+  </script>
+
+</body>
+</html>

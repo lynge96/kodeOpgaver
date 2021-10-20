@@ -16,13 +16,12 @@ function copyArray(array) {
 console.log("vendOmArray");
 
 let array1 = [1, 2, 3, 4];
-let array2 = vendOm(array1);
 
 function vendOm(array1) {
     let array2 = [];
-    for (let i = array1.length; i >= 0; i--) {
+    for (let i = array1.length - 1; i >= 0; i--) {
         array2.push(array1[i]);
     }
     return array2;
 }
-console.log(array2);
+console.log(vendOm(array1));

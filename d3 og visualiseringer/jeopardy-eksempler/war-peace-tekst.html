@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jeopardy data</title>
+  <script src="d3.js"></script>
+</head>
+
+<body>
+  <script>
+    // Loader jeopardy-data og gør det tilgængeligt
+    d3.json("JEOPARDY_QUESTIONS.json").then(function (data) {
+      const jeopardy = data;
+
+      // Fire datapunkter i et array. Vi starter med at sætte dem alle til '0'.
+      let opsamling = [0, 0, 0, 0];
+
+      // Forklaring:
+      // Vi løber alle spørgsmål igennem med et for loop.
+      // For hvert spørgsmål, tjekker vi om en af fire betingelser er opfyldt.
+      // Hver af de fire betingelser tælles op på hver af de fire pladser i arrayet.
+      // Resultat: Vi har lavet en optælling på antallet af forekomster på de fire ord vi leder efter.
+      // Dvs. antaller af kategorier hvor hver af de fire ord forekommer. 
+      for (let question of data) {
+        if (question.category.toLowerCase().includes("war")) {
+          opsamling[0] = opsamling[0] + 1;
+        } 
+        if (question.category.toLowerCase().includes("peace")) {
+          opsamling[1] = opsamling[1] + 1;
+        } 
+        if (question.category.toLowerCase().includes("love")) {
+          opsamling[2] = opsamling[2] + 1;
+        } 
+        if (question.category.toLowerCase().includes("hate")) {
+          opsamling[3] = opsamling[3] + 1;
+        }
+      }
+
+      // Width og height
+      const w = 750;
+      const h = 400;
+      const barPadding = 5;
+
+      // Laver et SVG element
+      const svg = d3.select("body")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
+      
+      // Laver barchart
+      svg.selectAll("rect")
+        .data(opsamling)
+        .enter()
+        .append("rect")
+        .attr("x", function (d, i) {
+          return i * (w / opsamling.length);
+        })
+        .attr("y", function (d) {
+          return h - (d * 0.2);
+        })
+        .attr("width", w / opsamling.length - barPadding)
+        .attr("height", function (d) {
+          return d * 0.2;
+        })
+        .attr("fill", "rgb(45, 111, 233)");
+        
+			svg.selectAll("text")
+			   .data(opsamling)
+			   .enter()
+			   .append("text")
+			   .text(function(d) {
+			   		return d;
+			   })
+			   .attr("x", function(d, i) {
+			   		return i * (w / opsamling.length) + 5;
+			   })
+			   .attr("y", function(d) {
+			   		return h - (d * 0.1);
+			   })
+			   .attr("font-family", "sans-serif")
+			   .attr("font-size", "16px")
+			   .attr("fill", "orange");
+
+
+      d3.select("body").append("h2").text(`Antal gange hvert af følgende ord forekommer i en Jeopardy-kategori:`);
+      d3.select("body").append("p").text(`Ordet "war" forekommer ${opsamling[0]} gange.`);
+      d3.select("body").append("p").text(`Ordet "peace" forekommer ${opsamling[1]} gange.`);
+      d3.select("body").append("p").text(`Ordet "love" forekommer ${opsamling[2]} gange.`);
+      d3.select("body").append("p").text(`Ordet "hate" forekommer ${opsamling[3]} gange.`);
+
+      console.log("opsamling", opsamling);
+    });
+  </script>
+
+</body>
+</html>

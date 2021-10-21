@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D3-eksempel</title>
+    <script type="text/javascript" src="d3.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const dataset = [ "peach", "pineapple", "passion", "papaya", "pomegranate" ]; 
+
+      d3.select("body").selectAll("p")
+        .data(dataset)
+        .enter()
+        .append("p")
+        .text(function(d) {
+          // Datapunktet indgår i den tekst der indsættes - to steder!
+          return `Ordet ${d} har en længde på ${d.length}`
+        })
+        .style("color", function(d) {
+          // Denne funktion bruges til at farve teksten afhængigt af datapunktet 'd'
+          if (d.length >= 8) {  
+            return "blue";
+          } else {
+            return "red";
+          }
+        });
+    </script>
+  </body>
+</html>

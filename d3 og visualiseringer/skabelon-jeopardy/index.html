@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jeopardy data</title>
+  <script src="d3.js"></script>
+</head>
+
+<body>
+  <script>
+    // Loader jeopardy-data og gør det tilgængeligt
+    d3.json("JEOPARDY_QUESTIONS.json").then(function(data) {
+      let jeopardy = data;
+
+      // Tag spørgsmål nr. 442
+      let nr = 469;
+      let spørgsmål = jeopardy[nr];
+
+      // DEBUG: Udskriver lige hele spørgsmåls-objeket til browser-console
+      console.log(spørgsmål);
+
+      // Indsæt overskrift på siden:
+      d3.select("body").append("h2").text(`Jeopardy - Spørgsmål ${nr}`);
+
+      // Indsæt kategori på siden:
+      d3.select("body").append("p").text(spørgsmål.category);
+
+      // Indsæt "spørgsmål":
+      d3.select("body").append("p").text(spørgsmål.question);
+
+      // Indsæt "svar":
+      d3.select("body").append("p").text(spørgsmål.answer);
+
+      // Indsæt "airdate":
+      d3.select("body").append("p").text(spørgsmål.air_date);
+
+      // Indsæt værdien af spørgsmålet:
+      d3.select("body").append("p").text(spørgsmål.value);
+
+      // Indsæt spørgsmålets show number:
+      d3.select("body").append("p").text(spørgsmål.show_number);
+    });
+  </script>
+
+</body>
+
+</html>

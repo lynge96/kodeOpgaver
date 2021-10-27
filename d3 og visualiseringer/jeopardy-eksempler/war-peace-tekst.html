@@ -89,6 +89,43 @@
       d3.select("body").append("p").text(`Ordet "hate" forekommer ${opsamling[3]} gange.`);
 
       console.log("opsamling", opsamling);
+
+      // 1. Præcist hvor mange spørgsmål er der i alt?
+      d3.select("body").append("p").text(`Der er ${data.length} spørgsmål`);
+
+      // 2. Hvad er det længste spørgsmål i datasættet?
+      console.log("opgave 8.2")
+      let længste = 0;
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].question.length > data[længste].question.length) {
+          længste = i;
+        }
+      }
+      console.log(længste);
+      console.log(data[længste].question);
+
+      // 3. Hvor mange spørgsmål indeholder ordet “STRAWBERRY”?
+      console.log("opgave8.3");
+
+      let antalSpg = 0;
+      for (let spg of data) {
+        if (spg.question.toLowerCase().includes("strawberry")) {
+          antalSpg += 1;
+        } 
+      }
+      console.log(`Der er ${antalSpg} spørgsmål med strawberry!`);
+
+      // 4. Hvilket spørgsmål har “HULK” som svar?
+      console.log("opgave8.4");
+
+      let svar = [];
+      for (let spg of data) {
+        if (spg.answer.toLowerCase().includes("hulk")) {
+          svar.push(spg);
+        }
+      }
+      console.log(`Spørgsmål ${svar.length} indeholder Hulk som svar!`);
+
     });
   </script>
 

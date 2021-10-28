@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scatter Plot</title>
+    <script type="text/javascript" src="d3.js"></script>
+    <style>
+      svg {
+        border: 2px solid black;
+        background-color: aliceblue;
+        padding: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      // Width og height
+      const w = 500;
+      const h = 400;
+      const padding = 20;
+
+      // Selve datasættet
+      const dataset = [
+        [50, 20, "red"],
+        [100, 20, "red"],
+        [150, 20, "red"],
+        [200, 20, "red"],
+        [250, 20, "red"],
+        [50, 60, "red"],
+        [100, 60, "green"],
+        [150, 60, "green"],
+        [200, 60, "green"],
+        [250, 60, "red"],
+        [50, 100, "red"],
+        [100, 100, "red"],
+        [150, 100, "red"],
+        [200, 100, "red"],
+        [250, 100, "red"],
+        [50, 140, "red"],
+        [100, 140, "blue"],
+        [150, 140, "red"],
+        [200, 140, "blue"],
+        [250, 140, "red"],
+        [50, 180, "red"],
+        [100, 180, "red"],
+        [150, 180, "red"],
+        [200, 180, "red"],
+        [250, 180, "red"],
+      ];
+
+      // Lav en skala for x-aksen
+      const xScale = d3.scaleLinear()
+        .domain([0, d3.max(dataset, function(d) { return d[0]; })]) 
+        .range([padding, w - padding * 2]);
+      
+      // Lav en skala for y-aksen
+      const yScale = d3.scaleLinear()
+        .domain([0, d3.max(dataset, function(d) { return d[1]; })])
+        .range([h - padding, padding]);
+
+      // Lav SVG-elementet
+      const svg = d3
+        .select("body")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
+
+      // Lave scatter plot (punktdiagram)
+      svg
+        .selectAll("circle") // <-- Før var det 'rect'
+        .data(dataset)
+        .enter()
+        .append("circle") // <-- Før var det 'rect'
+        .attr("cx", function (d) {
+          // 'd' er et koordinat på formen [x, y]
+          return xScale(d[0]); // Første værdi i indre array (x)
+        })
+        .attr("cy", function (d) {
+          return yScale(d[1]); // Anden værdi i indre array (y)
+        })
+        .attr("r", 15) // Radius er en konstant på '5'
+        .attr("fill", function (d) {
+          return d[2];
+        })
+    </script>
+  </body>
+</html>

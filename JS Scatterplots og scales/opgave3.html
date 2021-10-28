@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scatter Plot</title>
+    <script type="text/javascript" src="d3.js"></script>
+    <style>
+      svg {
+        border: 2px solid black;
+        background-color: aliceblue;
+        padding: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      // Width og height
+      const w = 500;
+      const h = 100;
+
+      // Selve datasættet
+      const dataset = [
+        [5, 20],
+        [480, 90],
+        [250, 50],
+        [100, 33],
+        [330, 95],
+        [410, 12],
+        [475, 44],
+      ];
+
+      // Opgave 3
+      // Delopgave 1
+      // TODO: Opret en lineær skala med navnet 'scale'
+      console.log("opgave3.1");
+      const scale = d3.scaleLinear()
+        .domain([0, 250])
+        .range([0, 1000]);
+      // Her testes scale-funktionen
+      console.log(scale(50)); // Skal udskrive '200'
+      console.log(scale(100)); // Skal udskrive '400'
+      console.log(scale(250)); // Skal udskrive '1000'
+
+      // Delopgave 2
+      // TODO: Opret en lineær skala med navnet 'scale'
+      console.log("opgave3.2");
+      const scale2 = d3.scaleLinear()
+        .domain([0, 200])
+        .range([100, 200]);
+      // Her testes scale-funktionen
+      console.log(scale2(0)); // Skal udskrive '100'
+      console.log(scale2(100)); // Skal udskrive '150'
+      console.log(scale2(200)); // Skal udskrive '200'
+      
+      // Delopgave 3
+      // TODO: Opret en lineær skala med navnet 'scale'
+      console.log("opgave3.3");
+      const scale3 = d3.scaleLinear()
+        .domain([0, 100])
+        .range([500, 0]);
+      // Her testes scale-funktionen
+      console.log(scale3(0));   // Skal udskrive '500'
+      console.log(scale3(50)); // Skal udskrive '250'
+      console.log(scale3(100)); // Skal udskrive '0'
+
+
+
+
+
+
+      // Lav SVG-elementet
+      const svg = d3
+        .select("body")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
+
+      // Lave scatter plot (punktdiagram)
+      svg
+        .selectAll("circle") // <-- Før var det 'rect'
+        .data(dataset)
+        .enter()
+        .append("circle") // <-- Før var det 'rect'
+        .attr("cx", function (d) {
+          // 'd' er et koordinat på formen [x, y]
+          return d[0]; // Første værdi i indre array (x)
+        })
+        .attr("cy", function (d) {
+          return d[1]; // Anden værdi i indre array (y)
+        })
+        .attr("r", 5); // Radius er en konstant på '5'
+    </script>
+  </body>
+</html>

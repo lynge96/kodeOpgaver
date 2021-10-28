@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scatter Plot</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style>
+    svg {
+      border: 2px solid black;
+      background-color: aliceblue;
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript">
+    // Width og height
+    const w = 500;
+    const h = 100;
+
+    // Selve datasættet
+    const dataset = [
+      [5, 20], 
+      [480, 90], 
+      [250, 50], 
+      [100, 33], 
+      [330, 95],
+      [410, 12], 
+      [475, 44],
+      [5, 95],
+      [5, 75],
+      [25, 95]
+    ];
+
+    for (let i = 0; i < 50; i++) {
+      dataset.push([Math.floor(Math.random() * 500), Math.floor(Math.random() * 100)]);
+    }
+    console.log(dataset);
+
+    // Lav SVG-elementet
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+    // Lave scatter plot (punktdiagram)
+    svg.selectAll("circle") // <-- Før var det 'rect'
+      .data(dataset)
+      .enter()
+      .append("circle") // <-- Før var det 'rect'
+      .attr("cx", function(d) {
+        // 'd' er et koordinat på formen [x, y]
+        return d[0]; // Første værdi i indre array (x)
+      })
+      .attr("cy", function(d) {
+        return d[1]; // Anden værdi i indre array (y)
+      })
+      .attr("r", 3) // Radius er en konstant på '5'
+      .attr("fill", "rgb(234, 76, 123)");
+
+  </script>
+</body>
+
+</html>

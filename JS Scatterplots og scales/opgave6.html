@@ -45,16 +45,24 @@
     })
     console.log(`Den laveste arbejdstid/uge er ${minWork} og den største er ${maxWork}!`);
 
-    // Lavet et array med befolkningstal, hvor alle værdier er i Millioner.
+    
+    // Function til at omdanne population til Millioner
+    function stringToFloat(str) {
+      let resultNumber = 0;
+      if (str.includes("k")) {
+        resultNumber = parseFloat(str)/1000;
+      } else if (str.includes("B")) {
+        resultNumber = parseFloat(str)*1000;
+      } else if (str.includes("M")) {
+        resultNumber = parseFloat(str);
+      }
+      return resultNumber;
+    }
+    
+    // Laver et array med befolkningstal, hvor alle værdier er i Millioner.
     let popTotal = [];
     for (let pop of data) {
-      if (pop.population_total_2017.includes("k")) {
-        popTotal.push(parseFloat(pop.population_total_2017)/1000);
-      } else if (pop.population_total_2017.includes("B")) {
-        popTotal.push(parseFloat(pop.population_total_2017)*1000);
-      } else if (pop.population_total_2017.includes("M")) {
-        popTotal.push(parseFloat(pop.population_total_2017));
-      }
+      popTotal.push(stringToFloat(pop.population_total_2017));
     }
     console.log(popTotal);
 
@@ -79,7 +87,7 @@
     // Radius scale
     let rScale = d3.scaleLinear()
       .domain([minPop, maxPop])
-      .range([1, 6])
+      .range([1, 20])
       .nice();
 
     // SVG element
@@ -102,7 +110,7 @@
         return yScale(d.working_hours_per_week_2017);
       })
       .attr("r", function (d) {
-        return rScale(parseFloat(d.population_total_2017));
+        return rScale(stringToFloat(d.population_total_2017));
       })
       .attr("fill", "rgb(34, 103, 225)");
 

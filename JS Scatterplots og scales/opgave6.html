@@ -7,7 +7,7 @@
   <style>
     svg {
       border: 2px solid black;
-      background-color: rgba(185, 236, 225, 0.521);
+      background-color: rgba(185, 202, 198, 0.521);
       padding: 1em;
     }
   </style>
@@ -23,8 +23,8 @@
     console.log("første række:", data[0]);
 
     // Width, height og padding
-    const w = 500;
-    const h = 500;
+    const w = 600;
+    const h = 600;
     const padding = 10;
 
     // Hapiscore bruges til x-aksen
@@ -45,13 +45,23 @@
     })
     console.log(`Den laveste arbejdstid/uge er ${minWork} og den største er ${maxWork}!`);
 
+    // Lavet et array med befolkningstal, hvor alle værdier er i Millioner.
+    let popTotal = [];
+    for (let pop of data) {
+      if (pop.population_total_2017.includes("k")) {
+        popTotal.push(parseFloat(pop.population_total_2017)/1000);
+      } else if (pop.population_total_2017.includes("B")) {
+        popTotal.push(parseFloat(pop.population_total_2017)*1000);
+      } else if (pop.population_total_2017.includes("M")) {
+        popTotal.push(parseFloat(pop.population_total_2017));
+      }
+    }
+    console.log(popTotal);
+
     // Population bruges til radius på cirkler
-    let maxPop = d3.max(data, function(d) {
-      return parseFloat(d.population_total_2017);
-    })
-    let minPop = d3.min(data, function(d) {
-      return parseFloat(d.population_total_2017);
-    })
+    let maxPop = d3.max(popTotal);
+    let minPop = d3.min(popTotal);
+
     console.log(`Den mindste population er ${minPop}M og den største er ${maxPop}M!`)
 
     // X-akse scale
@@ -68,8 +78,8 @@
     
     // Radius scale
     let rScale = d3.scaleLinear()
-      .domain([0, maxPop])
-      .range([1, 5])
+      .domain([minPop, maxPop])
+      .range([1, 6])
       .nice();
 
     // SVG element
@@ -92,10 +102,9 @@
         return yScale(d.working_hours_per_week_2017);
       })
       .attr("r", function (d) {
-        return rScale(d.population_total_2017);
+        return rScale(parseFloat(d.population_total_2017));
       })
-      .attr("fill", "rgb(234, 21, 65)");
-
+      .attr("fill", "rgb(34, 103, 225)");
 
   });
 

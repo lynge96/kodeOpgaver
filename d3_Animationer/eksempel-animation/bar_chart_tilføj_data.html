@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bar Chart tilføj data</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>Farvede søjler!</h1>
+
+  <button id="klik_tilføj">Tilføj data</button>
+  <button id="klik_fjern">Fjern data</button>
+
+  <br />
+
+  <script type="text/javascript">
+    const maxValue = 100;
+
+    function randomData(key) {
+      // Tilfældig farve ved at trylle lidt med Math.random() :)
+      const color = "#" + (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, "0");
+      const value = Math.floor(Math.random() * maxValue);
+      return { key, color, value };
+    }
+
+    // Width og height
+    const w = 600;
+    const h = 250;
+
+    // Lav noget data
+    let dataset = [];
+    for (let i = 0; i < 10; i++) {
+      dataset.push(randomData(i));
+    }
+
+    // Scale-funktioner
+    const xScale = d3.scaleBand()
+      .domain(d3.range(dataset.length))
+      .rangeRound([0, w])
+      .paddingInner(0.05);
+
+    const yScale = d3.scaleLinear()
+      .domain([0, maxValue])
+      .range([0, h]);
+
+    // Lav et SVG element
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+    // Lav indledende barchart
+    svg.selectAll("rect")
+      .data(dataset, function (d) {
+        return d.key;
+      })
+      .enter()
+      .append("rect")
+      .attr("x", function (d, i) {
+        return xScale(i);
+      })
+      .attr("y", function (d) {
+        return h - yScale(d.value);
+      })
+      .attr("width", xScale.bandwidth())
+      .attr("height", function (d) {
+        return yScale(d.value);
+      })
+      .attr("fill", function (d) {
+        return d.color;
+      });
+
+    // Vælg elementet med id "klik_tilføj" og tilføj en handling		
+    d3.select("#klik_tilføj")
+      .on("click", function () {
+        // Kode herunder kører kun når der trykkes på knappen
+
+        // Tilføj noget nyt data
+        dataset.push(randomData(dataset.length + 1));
+
+        // Opdater scale-funktioner
+        xScale.domain(d3.range(dataset.length));
+        yScale.domain([0, maxValue]);	// Strengt taget ikke nødvendig her
+
+        // select 'rects' og tilføj ny data
+        const updateSelection = svg.selectAll("rect")
+          .data(dataset, function (d) {
+            return d.key;
+          });
+
+        // 'enter' bruges til at animere det nye data
+        updateSelection.enter()
+          // Alt efter 'enter()' vedrører kun det nye datapunkt
+          .append("rect")
+          .attr("x", w)
+          .attr("y", function (d) {
+            return h - yScale(d.value);
+          })
+          .attr("width", xScale.bandwidth())
+          .attr("height", function (d) {
+            return yScale(d.value);
+          })
+          .attr("fill", function (d) {
+            return d.color;
+          })
+          // Her flettes det nye punkt sammen med de gamle punkter
+          .merge(updateSelection)
+          // Og animationen herunder vedrører alle punkter
+          .transition()
+          .duration(1500)
+          .attr("x", function (d, i) {
+            return xScale(i);
+          })
+          .attr("y", function (d) {
+            return h - yScale(d.value);
+          })
+          .attr("width", xScale.bandwidth())
+          .attr("height", function (d) {
+            return yScale(d.value);
+          });
+      });
+
+    // Vælg elementet med id "klik_fjern" og tilføj en handling		
+    d3.select("#klik_fjern")
+      .on("click", function () {
+        // Kode herunder kører kun når der trykkes på knappen
+
+        // Fjern sidste element   
+        dataset.pop();
+
+        // Opdater scale-funktioner
+        xScale.domain(d3.range(dataset.length));
+        yScale.domain([0, maxValue]);	// Strengt taget ikke nødvendig igen
+
+        // select alle 'rects' og tilføj ny data
+        const updateSelection = svg.selectAll("rect")
+          .data(dataset, function (d) {
+            return d.key;
+          });
+
+        // Alle søjler animeres fint.
+        // De har alle fået nye værdier fordi der er fjernet et punkt
+        updateSelection.transition()
+          .duration(1500)
+          .attr("x", function (d, i) {
+            return xScale(i);
+          })
+          .attr("y", function (d) {
+            return h - yScale(d.value);
+          })
+          .attr("width", xScale.bandwidth())
+          .attr("height", function (d) {
+            return yScale(d.value);
+          });
+
+        // 'exit' bruges til at animere den søjle der er fjernet, og kun den
+        updateSelection.exit()
+          .transition()
+          .delay(200)
+          .duration(2000)
+          .attr("fill", "#00000000") // Animere til usynlighed
+          .attr("x", w + 200) // Flytter søjlen ud til højre
+          .remove(); // 'rect' slettes
+      });
+  </script>
+</body>
+
+</html>

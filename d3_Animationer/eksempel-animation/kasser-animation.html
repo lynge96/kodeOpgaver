@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animerede kasser</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>Animerede kasser</h1>
+
+  <button id="klik"><b>Tryk her for at starte animationen!</b></button>
+
+  <br/>
+
+  <script type="text/javascript">
+
+    const data = ["darkred", "green", "orange"]
+    
+    // Lav en svg
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", 500)
+      .attr("height", 500);
+
+    // Lav kasser med farverne
+    svg.selectAll("rect")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("x", function(d, i) { return 20 + i * 50; } )
+      .attr("y", 50)
+      .attr("width", 40)
+      .attr("height", 100)
+      .attr("fill", function(d) { return d; } );
+
+    // Knapen vælges via dens id 'klik'
+    d3.select("#klik")
+      // Koden herunder køres kun ved tryk på knappen
+      .on("click", function () {
+
+        // Vælg alle 'rect'
+        d3.selectAll("rect")
+          .transition() // Start en animation
+          // Alt herunder er slutresultatet for animationen
+          // Prøv at lave ændringer og se hvordan animationen ændrer sig!
+          .duration(2000)
+          .delay(500)
+          .attr("x", function(d, i) { return 20 + i * 150; } )
+          .attr("height", 300)
+          .attr("fill", "lightblue");
+      });
+
+  </script>
+</body>
+
+</html>

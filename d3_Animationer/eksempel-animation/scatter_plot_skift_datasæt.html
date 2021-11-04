@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Scatter Plot animation</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>Scatter Plot animation</h1>
+
+  <p>Herunder kan du skifte imellem tre forskellige datasæt.</p>
+
+  <button id="klik1">Datasæt 1</button>
+  <button id="klik2">Datasæt 2</button>
+  <button id="klik3">Datasæt 3</button>
+
+  <br />
+
+  <script type="text/javascript">
+
+    // Width og height
+    const w = 500;
+    const h = 300;
+
+    // Selve datasættene
+    const dataset1 = [
+      [5, 20], [480, 90], [250, 50], [100, 33], [330, 95], [410, 12], [475, 44]
+    ];
+    const dataset2 = [
+      [10, 10], [200, 90], [200, 20], [120, 13], [350, 75], [210, 42], [275, 34]
+    ];
+    const dataset3 = [
+      [350, 20], [30, 90], [10, 50], [105, 31], [230, 295], [110, 112], [375, 84]
+    ];
+
+    // Lav SVG-elementet
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+    // Lave scatter plot (punktdiagram)
+    svg.selectAll("circle")
+      .data(dataset1)
+      .enter()
+      .append("circle")
+      .attr("cx", function (d) {
+        return d[0];
+      })
+      .attr("cy", function (d) {
+        return d[1];
+      })
+      .attr("r", 5);
+
+    // Knappen vælges via dens id 'klik'
+    d3.selectAll("#klik1, #klik2, #klik3")
+      // Koden herunder køres kun ved tryk på knappen
+      .on("click", function (e) {
+        // Find hvilken knap der blev trykket på
+        const id = e.target.id;
+        console.log(id);
+
+        // Vælg det rigtige datasæt
+        let nyData = dataset1;
+        if (id === "klik2") {
+          nyData = dataset2;
+        } else if (id === "klik3") {
+          nyData = dataset3;
+        }
+
+        // Vælg cirkler og lav animation
+        svg.selectAll("circle")
+          .data(nyData)
+          .transition()
+          .duration(1500)
+          .attr("cx", function (d) {
+            return d[0];
+          })
+          .attr("cy", function (d) {
+            return d[1];
+          });
+      });
+
+  </script>
+</body>
+
+</html>

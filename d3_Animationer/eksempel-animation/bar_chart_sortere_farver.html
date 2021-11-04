@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bar Chart Transition med farver</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>Farvede søjler!</h1>
+
+  <button id="klik_sorter"><b>Tryk her for at sortere farver!</b></button>
+
+  <p>Genindlæs siden for ny data</p>
+
+  <script type="text/javascript">
+    const maxValue = 100;
+    function randomData(key) {
+      // Tilfældig farve ved at trylle lidt med Math.random() :)
+      const red = "aa";//(Math.random() * 0xFF << 0).toString(16);
+      const blue = (Math.random() * 0xFF << 0).toString(16);
+      const green = "aa";//(Math.random() * 0xFF << 0).toString(16);
+
+      const color = "#" + (red + green + blue).padStart(6, "0");
+      const value = Math.floor(Math.random() * maxValue);
+      return {key, color, value};
+    }
+
+    // Width og height
+    const w = 600;
+    const h = 250;
+
+    let dataset = [];
+    for (let i = 0; i < 16; i++) {
+      dataset.push(randomData(i));
+    }
+
+    // Find lige alle de forskellige farver der er i brug
+    const uniqueColors = [];
+    for (let d of dataset) {
+      if (uniqueColors.includes(d.color)) {
+        // Gør ingenting
+      } else {
+        uniqueColors.push(d.color); // Husk farve!
+      }
+    }
+    
+    // Scale-funktioner
+    const xScale = d3.scaleBand()
+    .domain(uniqueColors) // Jep, domænet er alle farver i brug!
+    .rangeRound([0, w])
+    .paddingInner(0.05);
+
+    const yScale = d3.scaleLinear()
+    .domain([0, maxValue])
+    .range([0, h]);
+
+    // SVG element
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+    // Bars
+    svg.selectAll("rect")
+      .data(dataset, function(d) {
+        return d.key;
+      })
+      .enter()
+      .append("rect")
+      .attr("x", function (d, i) {
+        return xScale(d.color);
+      })
+      .attr("y", function (d) {
+        return h - yScale(d.value);
+      })
+      .attr("width", xScale.bandwidth())
+      .attr("height", function (d) {
+        return yScale(d.value);
+      })
+      .attr("fill", function (d) {
+        return d.color;
+      });
+      	
+    d3.select("#klik_sorter")
+      .on("click", function () {
+
+        // Vi sorterer farverne i domænet og opdaterer skala-funktionen
+        uniqueColors.sort();
+        const xScale = d3.scaleBand()
+          .domain(uniqueColors)
+          .rangeRound([0, w])
+          .paddingInner(0.05);
+
+        // select
+        const updateSelection = svg.selectAll("rect")
+          .data(dataset, function(d) {
+            return d.key;
+          });
+
+        // enter
+        updateSelection
+          .transition()
+          .duration(1500)
+          .attr("x", function(d, i) {
+            return xScale(d.color);
+          })
+          .attr("y", function(d) {
+            return h - yScale(d.value);
+          })
+          .attr("width", xScale.bandwidth())
+          .attr("height", function(d) {
+            return yScale(d.value);
+          });  
+      });
+
+
+  </script>
+</body>
+
+</html>

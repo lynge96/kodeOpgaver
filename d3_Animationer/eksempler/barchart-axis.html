@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>d3.js barchart med akser</title>
+  <script type="text/javascript" src="d3.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    // Width og height
+    const w = 500;
+    const h = 150;
+    const barPadding = 2; // Mellemrum imellem bars
+    const bottomPadding = 20; // Plads til akse i bunden
+    const sidePadding = 10; // Lidt luft i siderne også
+
+    // Bare noget data
+    const dataset = [5, 10, 13, 19, 88, 25, 22, 118, 15, 53,
+      11, 12, 15, 20, 78, 17, 16, 18, 23, 125];
+
+    // Scale-funktioner
+    const yScale = d3.scaleLinear() // Linæer skalering
+      .domain([0, d3.max(dataset)]) 
+      .range([0, h - bottomPadding])
+
+    const xScale = d3.scaleLinear() // Linæer skalering
+      .domain([0, dataset.length])
+      .range([sidePadding, w - sidePadding])
+
+    // Lav SVG element
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+    // Lav bars
+    svg.selectAll("rect")
+      .data(dataset)
+      .enter()
+      .append("rect")
+      .attr("x", function (d, i) {
+        return xScale(i);
+      })
+      .attr("y", function (d) {
+        return h - yScale(d) - bottomPadding;
+      })
+      .attr("width", w / dataset.length - barPadding)
+      .attr("height", function (d) {
+        return yScale(d);
+      })
+      .attr("fill", "teal")
+    ;
+
+    // Lave x-akse med tal
+    const xAxis = d3.axisBottom().scale(xScale);
+    svg.append("g") // "g" er en SVG Group
+      // Aksen flyttes på plads med 'transform'
+      .attr("transform", "translate(0," + (h - bottomPadding) + ")")
+      // d3.js laver sin magi
+      .call(xAxis);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tre animerede polygoner</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>Tre animerede polygoner</h1>
+
+  <button id="klik">Tryk her for at starte animationen!</button>
+
+  <br />
+
+  <script type="text/javascript">
+    const data = [
+      ["200,10", "250,190", "160,210", "#4C5270"],
+      ["50,10", "100,190", "150,40", "#36EEE0"],
+      ["250,30", "300,40", "270,140", "#F652A0"]
+    ]
+
+    // Lav en svg
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", 500)
+      .attr("height", 500);
+
+    // Tegne alle polygoner
+    svg.selectAll("polygon")
+      .data(data)
+      .enter()
+      .append("polygon")
+      .attr("points", function (d) {
+        return d.slice(0, 3).join(" ");
+      })
+      .attr("fill", function (d) {
+        return d[3];
+      });
+
+    // Animations-funktionen, bruges fra setInterval længere nede
+    function animer() {
+      d3.selectAll("polygon")
+        .transition()
+        .duration(1000)
+        .attr("points", function (d) {
+          // Hvor meget punkterne kan flytte sig
+          const variation = 20;
+          // Array kun med punkter - minus farven
+          let points = d.slice(0, 3);
+
+          // De nye punkter (udfyldes med for loop)
+          let newPoints = [];
+          for (let i = 0; i < points.length; i++) {
+            // Lav nyt random punkt med random x og y
+            let newPointX = Math.random() * variation;
+            let newPointY = Math.random() * variation;
+
+            // Vælg fortegn tilfældigt (enten + eller -)
+            newPointX *= Math.round(Math.random()) ? 1 : -1;
+            newPointY *= Math.round(Math.random()) ? 1 : -1;
+
+            // Hent x og y for det gamle punkt
+            oldPointX = parseInt(points[i].split(",")[0]);
+            oldPointY = parseInt(points[i].split(",")[1]);
+
+            // Konstruer det nye punkt ved at lægge de gamle værdier til
+            const newPoint = `${oldPointX + newPointX},${oldPointY + newPointY}`;
+
+            // Gem det nye punkt i nyt array
+            newPoints.push(newPoint);
+          }
+
+          return newPoints;
+        })
+    }
+
+    // Knapen vælges via dens id 'klik'
+    d3.select("#klik")
+      .on("click", function () {
+        // Koden herunder køres kun ved tryk på knappen
+        animer(); // Lav første animation uden delay
+        setInterval(animer, 1000); // Lav resten med intervaller
+      });
+
+  </script>
+</body>
+
+</html>

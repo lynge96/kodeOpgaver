@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bar Chart Transition med farver</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>Sorter søjlerne efter højde!</h1>
+
+  <button id="klik_sorter"><b>Tryk her for at sortere søjler!</b></button>
+
+  <p>Genindlæs siden for ny data</p>
+
+  <script type="text/javascript">
+    const maxValue = 100;
+
+    /** 
+     * En funktion der laver en tilfældig farve på formen "#000000"
+     */
+    function randomColor() { 
+      // Lidt random magi :)
+      const red = (Math.random() * 0xFF << 0).toString(16);
+      const blue = (Math.random() * 0xFF << 0).toString(16);
+      const green = (Math.random() * 0xFF << 0).toString(16);
+      const color = "#" + (red + green + blue).padStart(6, "0");
+      return color;
+    }
+
+    /** 
+     * Laver noget tilfældig data i et array på formen [key, value, color]
+     * @param {key} unik key for dette datapunkt - fx en id eller et index
+     */
+    function randomData(key) {
+      return [key, Math.random() * maxValue, randomColor()];
+    }
+
+    // Width og height
+    const w = 600;
+    const h = 250;
+
+    // Nu laves et array med 20 tilfældige datapunkter
+    let dataset = [];
+    for (let i = 0; i < 20; i++) {
+      dataset.push(randomData(i));
+    }
+    console.log(dataset);
+    console.log(JSON.stringify(dataset));
+
+    // En scaleBand benytter sig af ordenstal i stedet for et interval af tal
+    const xScale = d3.scaleBand()
+      // Domænet er alle værdier på plads nr. 2 i hvert indre array
+      // Husk, domænet består kun af 20 tal - hverken mere eller mindre
+      // Så domænet er præcist 20 tal, i en bestemt rækkefølge.
+      .domain(dataset.map(function (d) { return d[1] }))
+      // Output-området er fra 0 til 'w'
+      .range([0, w])
+      // Vi sætter padding imellem søjlerne også
+      .paddingInner(0.05);
+
+    // Traditionel skaleringsfunktion for 'y'.
+    const yScale = d3.scaleLinear()
+      .domain([0, maxValue])
+      .range([0, h]);
+
+    // SVG-elementet laves
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+    // Bar chart laves herunder
+    svg.selectAll("rect")
+      .data(dataset, function (d) {
+        // Denne funktion udpeger 'key' i hvert punkt, som er første element i arrayet.
+        return d[0]; 
+      })
+      .enter()
+      .append("rect")
+      .attr("x", function (d, i) {
+        return xScale(d[1]);
+      })
+      .attr("y", function (d) {
+        return h - yScale(d[1]);
+      })
+      // Skaleringsfunktionen tager sig af bredden på søjlerne - inklusiv padding
+      .attr("width", xScale.bandwidth())
+      .attr("height", function (d) {
+        return yScale(d[1]);
+      })
+      .attr("fill", function (d) {
+        // Farven er det tredje elemenet i arrayet - bruges til SVG fill
+        return d[2];
+      });
+
+    d3.select("#klik_sorter")
+      // Koden herunder køres kun ved tryk på knappen på siden
+      .on("click", function () {
+
+        // Data sorteres med "compare" callback function
+        dataset.sort(function (a, b) {
+          // En positivt return svarer til at 'a' er størst
+          // En negativt return svarer til at 'b' er størst
+          // Hvis return er 0, er 'a' og 'b' lige store.
+          // Læs mere her: http://mdn.io/Array.prototype.sort
+          return a[1] - b[1]
+        });
+
+        // Der skal laves en ny skaleringsfunktion til 'x'.
+        // Dette skyldes at rækkefølgen har ændret sig pga. sort()
+        const xScaleNy = d3.scaleBand()
+          .domain(dataset.map(function (d) { return d[1] }))
+          .rangeRound([0, w])
+          .paddingInner(0.05);
+
+        // select alle 'rect'.
+        // Husk, at de allerede findes. Nu skal vi ind og animere på dem.
+        const updateSelection = svg.selectAll("rect")
+          .data(dataset, function (d) {
+            return d[0]; // Vælge key på hvert punkt
+          });
+
+        // Nu har vi alle 'rect' i 'updateSelection'. 
+        // Nu skal der køres en opdatering med en transition (dvs. en animation)
+        updateSelection
+          .transition() // Lav en transition
+          .duration(2000) // Lad den køre i 2 sekunder
+
+          // Alt herunder er slutresultatet efter 2 sekunder. 
+          // Animationen laves automatisk af d3.js
+          .attr("x", function (d) {
+            return xScaleNy(d[1]); // Ny x-værdi efter animation er fuldendt
+          });
+          // 'x', 'width', 'height' og 'color' er de samme som før, 
+          // så dem behøver vi ikke at tage med i vores 'transition'
+          // Men i praksis kan man sagtens animere flere ting på én gang, hvis man vil.
+      });
+
+  </script>
+</body>
+
+</html>

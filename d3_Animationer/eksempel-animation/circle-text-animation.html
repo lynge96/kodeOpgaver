@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animeret cirkel</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>En animeret cirkel</h1>
+
+  <button id="klik">Tryk her for at starte animationen!</button>
+
+  <br/>
+
+  <script type="text/javascript">
+    
+    // Lav en svg
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", 500)
+      .attr("height", 500);
+
+    // Lav kasser med farverne
+    svg.append("circle")
+      .attr("cx", 250)
+      .attr("cy", 250)
+      .attr("r", 50)
+      .attr("fill", "#b7edeb");
+    
+    // Knappen vælges via dens id 'klik'
+    d3.select("#klik")
+      // Koden herunder køres kun ved tryk på knappen
+      .on("click", function () {
+
+        // Vælg cirklen og lav animation på den
+        d3.selectAll("circle")
+          .transition() // Start en animation
+          // Alt herunder er slutresultatet for animationen
+          // Prøv at lave ændringer og se hvordan animationen ændrer sig!
+          .duration(2000)
+          .attr("r", 200 )
+          .attr("fill", "darkred")
+
+        // Fjern den gamle tekst (hvis den findes)
+        d3.select("text").remove();
+
+        // Lav en ny tekst, men sæt den til at være gennemsigtig
+        svg.append("text")
+          .text("Hejsa")
+          .attr("x", 230)
+          .attr("y", 100)
+          .attr("font-family", "sans-serif")
+          .attr("font-size", "8px")
+          .attr("fill", "#ffffff00") // Den er usynlig
+          .transition() // Start en animation
+          .delay(500) // Men vent lige 0.5 sekunder
+          .duration(5000) 
+          .ease(d3.easeElastic) // En sjov bevægelse
+          // Se andre easing functions her: https://observablehq.com/@d3/easing
+          .attr("fill", "yellow")
+          .attr("x", 160)
+          .attr("y", 270)
+          .attr("font-size", "64px")
+          ;
+      });
+
+  </script>
+</body>
+
+</html>

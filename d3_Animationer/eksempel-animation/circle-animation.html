@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animeret cirkel</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>En animeret cirkel</h1>
+
+  <button id="klik">Tryk her for at starte animationen!</button>
+
+  <br/>
+
+  <script type="text/javascript">
+    
+    // Lav en svg
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", 500)
+      .attr("height", 500);
+
+    // Lav kasser med farverne
+    svg.append("circle")
+      .attr("cx", 250)
+      .attr("cy", 250)
+      .attr("r", 50)
+      .attr("fill", "#49d6d1");
+    
+    // Knappen vælges via dens id 'klik'
+    d3.select("#klik")
+      // Koden herunder køres kun ved tryk på knappen
+      .on("click", function () {
+        // Vælg cirklen og lav animation på den
+        d3.selectAll("circle")
+          .transition() // Start en transition (animation)
+          // Alt herunder er slutresultatet for transitionen
+          // Prøv at lave ændringer og se hvordan transitionen ændrer sig!
+          .duration(2000)
+          .attr("r", 200)
+          .attr("fill", "#d16a32")
+
+          .transition() // Start en transition mere efter den anden er færdig
+          .duration(2000)
+          .attr("r", 50)
+          .attr("fill", "#49d6d1")
+      });
+
+  </script>
+</body>
+
+</html>

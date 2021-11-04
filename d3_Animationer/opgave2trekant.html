@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animerede kasser</title>
+  <script type="text/javascript" src="d3.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h1>Animerede kasser</h1>
+
+  <button id="klik"><b>Tryk her for at starte animationen!</b></button>
+
+  <br/>
+
+  <script type="text/javascript">
+
+    const data = ["darkred", "green"]
+    
+    // Lav en svg
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", 500)
+      .attr("height", 500);
+
+    // Laver trekant med farverne
+    svg.selectAll("polygon")
+      .data(data)
+      .enter()
+      .append("polygon")
+      .attr("points", "10,100 100,15 200,100")
+      .attr("fill", "forestgreen")
+      .attr("stroke", "black")
+      .attr("stroke-width", "1")
+
+    // Knapen vælges via dens id 'klik'
+    d3.select("#klik")
+      // Koden herunder køres kun ved tryk på knappen
+      .on("click", function () {
+
+        d3.selectAll("polygon")
+          .transition()
+          .delay(300)
+          .duration(1000)
+          
+          .attr("points", "0,100 100,5 210,100")
+          .attr("fill", "crimson")
+
+          .transition()
+          .duration(1000)
+          .attr("points", "10,100 100,15 200,100")
+          .attr("fill", function(d) { return d; } );
+
+      });
+
+  </script>
+</body>
+
+</html>

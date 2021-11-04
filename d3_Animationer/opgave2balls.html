@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Animerede kugler</title>
+    <script type="text/javascript" src="d3.js"></script>
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <h1>Animerede kugler</h1>
+
+    <button id="klik"><b>Tryk her for at starte animationen!</b></button>
+
+    <br />
+
+    <script type="text/javascript">
+      const data = ["forestgreen", "gold", "crimson"];
+
+      // Lav en svg
+      const svg = d3
+        .select("body")
+        .append("svg")
+        .attr("width", 500)
+        .attr("height", 500);
+
+      // Laver trekant med farverne
+      svg
+        .selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("cx", function (d, i) {
+          return 50 + i * 80;
+        })
+        .attr("cy", 300)
+        .attr("r", 20)
+        .attr("fill", function (d, i) {
+          return d;
+        })
+        .attr("stroke", "black")
+        .attr("stroke-width", "1");
+
+      // Knapen vælges via dens id 'klik'
+      d3.select("#klik")
+        // Koden herunder køres kun ved tryk på knappen
+        .on("click", function () {
+          d3.selectAll("circle")
+            // start
+            .transition()
+            .delay(function (d, i) {
+              return Math.random() * 800;
+            })
+            .duration(1000)
+            .ease(d3.easeBounceIn)
+            .attr("cy", 30)
+            .attr("r", function (d, i) {
+              return 20 + i * 10;
+            })
+
+            // tilbage
+            .transition()
+            .duration(1000)
+            .ease(d3.easeCircleIn)
+            .attr("cy", 300)
+            .attr("fill", function (d) {
+              return d;
+            })
+            .attr("r", 20);
+        });
+    </script>
+  </body>
+</html>

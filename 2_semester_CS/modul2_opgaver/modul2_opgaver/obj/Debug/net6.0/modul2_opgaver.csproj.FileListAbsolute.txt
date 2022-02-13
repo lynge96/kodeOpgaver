@@ -1,0 +1,15 @@
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\bin\Debug\net6.0\modul2_opgaver.exe
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\bin\Debug\net6.0\modul2_opgaver.deps.json
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\bin\Debug\net6.0\modul2_opgaver.runtimeconfig.json
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\bin\Debug\net6.0\modul2_opgaver.dll
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\bin\Debug\net6.0\ref\modul2_opgaver.dll
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\bin\Debug\net6.0\modul2_opgaver.pdb
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.csproj.AssemblyReference.cache
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.AssemblyInfoInputs.cache
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.AssemblyInfo.cs
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.csproj.CoreCompileInputs.cache
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.dll
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\ref\modul2_opgaver.dll
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.pdb
+C:\Users\lynge\Desktop\2. Semester\App. udvikling\M.2 - If og for loops\modul2_opgaver\modul2_opgaver\obj\Debug\net6.0\modul2_opgaver.genruntimeconfig.cache

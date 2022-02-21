@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul2_opgaver\\modul2_opgaver\\modul2_opgaver.csproj": {}
+    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opgaver\\modul3_opgaver\\modul3_opgaver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul2_opgaver\\modul2_opgaver\\modul2_opgaver.csproj": {
+    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opgaver\\modul3_opgaver\\modul3_opgaver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul2_opgaver\\modul2_opgaver\\modul2_opgaver.csproj",
-        "projectName": "modul2_opgaver",
-        "projectPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul2_opgaver\\modul2_opgaver\\modul2_opgaver.csproj",
+        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opgaver\\modul3_opgaver\\modul3_opgaver.csproj",
+        "projectName": "modul3_opgaver",
+        "projectPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opgaver\\modul3_opgaver\\modul3_opgaver.csproj",
         "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul2_opgaver\\modul2_opgaver\\obj\\",
+        "outputPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opgaver\\modul3_opgaver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "modul3_opgaver/1.0.0": {
+        "runtime": {
+          "modul3_opgaver.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "modul3_opgaver/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

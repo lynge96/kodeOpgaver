@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "afb6426a-1a52-4efc-96f3-f32c2ec7eb6b": {
+      "ProjectGuid": "afb6426a-1a52-4efc-96f3-f32c2ec7eb6b",
+      "DisplayName": "opg3.02",
+      "ColorIndex": 0
+    },
+    "8f055360-dda2-49b2-bc28-a90671ad8f25": {
+      "ProjectGuid": "8f055360-dda2-49b2-bc28-a90671ad8f25",
+      "DisplayName": "opg3.03",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

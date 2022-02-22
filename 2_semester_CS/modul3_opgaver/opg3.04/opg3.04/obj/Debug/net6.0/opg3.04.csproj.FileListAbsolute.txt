@@ -1,0 +1,15 @@
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\bin\Debug\net6.0\opg3.04.exe
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\bin\Debug\net6.0\opg3.04.deps.json
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\bin\Debug\net6.0\opg3.04.runtimeconfig.json
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\bin\Debug\net6.0\opg3.04.dll
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\bin\Debug\net6.0\ref\opg3.04.dll
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\bin\Debug\net6.0\opg3.04.pdb
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.csproj.AssemblyReference.cache
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.AssemblyInfoInputs.cache
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.AssemblyInfo.cs
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.csproj.CoreCompileInputs.cache
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.dll
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\ref\opg3.04.dll
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.pdb
+C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opgaver\opg3.04\opg3.04\obj\Debug\net6.0\opg3.04.genruntimeconfig.cache

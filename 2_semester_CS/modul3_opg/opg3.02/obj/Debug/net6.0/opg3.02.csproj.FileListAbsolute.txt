@@ -1,0 +1,15 @@
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\bin\Debug\net6.0\opg3.02.exe
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\bin\Debug\net6.0\opg3.02.deps.json
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\bin\Debug\net6.0\opg3.02.runtimeconfig.json
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\bin\Debug\net6.0\opg3.02.dll
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\bin\Debug\net6.0\opg3.02.pdb
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.csproj.AssemblyReference.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.AssemblyInfoInputs.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.AssemblyInfo.cs
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.csproj.CoreCompileInputs.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.dll
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\refint\opg3.02.dll
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.pdb
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\opg3.02.genruntimeconfig.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.02\obj\Debug\net6.0\ref\opg3.02.dll

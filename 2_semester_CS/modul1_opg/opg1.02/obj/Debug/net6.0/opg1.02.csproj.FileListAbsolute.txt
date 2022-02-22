@@ -1,0 +1,5 @@
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul1_opg\modul1_opg\obj\Debug\net6.0\opg1.02.csproj.AssemblyReference.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul1_opg\modul1_opg\obj\Debug\net6.0\opg1.02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul1_opg\modul1_opg\obj\Debug\net6.0\opg1.02.AssemblyInfoInputs.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul1_opg\modul1_opg\obj\Debug\net6.0\opg1.02.AssemblyInfo.cs
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul1_opg\modul1_opg\obj\Debug\net6.0\opg1.02.csproj.CoreCompileInputs.cache

@@ -6,7 +6,13 @@
 
 double balance = 10000;
 double rente = 1.05;
-for (int i = 0; i < 30; i++)
+for (double i = 0; i < 20; i++)
 {
-    Console.WriteLine();
+    balance = balance * rente;
+    Console.WriteLine($"År {i} Balance: {balance}");
+    if (balance >= 20000)
+    {
+        Console.WriteLine($"Formuen er fordoblet efter {i} år. Balancen er på {balance}");
+        break;
+    }
 }

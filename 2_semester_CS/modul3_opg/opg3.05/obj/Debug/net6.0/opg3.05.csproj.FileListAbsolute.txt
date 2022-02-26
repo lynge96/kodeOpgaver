@@ -1,0 +1,15 @@
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.csproj.AssemblyReference.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.AssemblyInfoInputs.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.AssemblyInfo.cs
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.csproj.CoreCompileInputs.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.exe
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.deps.json
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.runtimeconfig.json
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.dll
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.pdb
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.dll
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\refint\opg3.05.dll
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.pdb
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.genruntimeconfig.cache
+C:\Users\Anders\Desktop\kode-opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\ref\opg3.05.dll

@@ -37,3 +37,35 @@ static int GreaterCount(double[] array, double min)
     }
     return størreSum;
 }
+
+
+// EKSTRA opgave
+// Skriv en metode randomInRange som taget to integer parametre. Metoden skal returnere en tilfældig integer der er større end eller lig med den første parametre
+// og lig med eller mindre end den anden. Brug denne metode til at sætte dine 10 temperaturtal i stedet for selv at indtaste:
+
+Console.WriteLine("\nEkstra Opgave:");
+// Metodekald:
+double randomTemp = randomInRange(6, 33);
+Console.WriteLine(randomTemp);
+
+// Metodens signatur:
+static double randomInRange(int min, int max)
+{
+    Random rand = new Random();
+    // Definerer et array med 10 pladser:
+    double[] randomTempArray = new double[10];
+    for (int i = 0; i < randomTempArray.Length; i++)
+    {
+        // Indsætter 10 random tal imellem min og max værdien.
+        randomTempArray[i] = rand.Next(min, max);
+    }
+    // Printer arrayet:
+    foreach (int i in randomTempArray)
+    {
+        Console.Write($"{i}, ");
+    }
+    Console.WriteLine("\n\nTilfældigt tal fra temperatur arrayet:");
+    // Finder et random index fra arrayet:
+    int temp = rand.Next(randomTempArray.Length);
+    return randomTempArray[temp];
+}

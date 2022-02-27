@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lynge\\.nuget\\packages\\": {}
+    "C:\\Users\\Anders\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+      "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
       "projectName": "opg3.05",
-      "projectPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
-      "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\",
+      "projectPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+      "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

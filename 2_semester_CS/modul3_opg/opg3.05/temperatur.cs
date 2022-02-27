@@ -57,7 +57,7 @@ static double randomInRange(int min, int max)
     for (int i = 0; i < randomTempArray.Length; i++)
     {
         // Indsætter 10 random tal imellem min og max værdien.
-        randomTempArray[i] = rand.Next(min, max);
+        randomTempArray[i] = rand.Next(min, max+1);
     }
     // Printer arrayet:
     foreach (int i in randomTempArray)

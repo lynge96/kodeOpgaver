@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj": {}
+    "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj": {
+    "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj",
+        "projectUniqueName": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj",
         "projectName": "opg3.02",
-        "projectPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj",
-        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\obj\\",
+        "projectPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\opg3.02.csproj",
+        "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

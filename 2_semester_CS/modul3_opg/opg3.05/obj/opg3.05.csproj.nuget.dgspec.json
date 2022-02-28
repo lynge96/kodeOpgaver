@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
         "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\",
+=======
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+        "projectName": "opg3.05",
+        "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",

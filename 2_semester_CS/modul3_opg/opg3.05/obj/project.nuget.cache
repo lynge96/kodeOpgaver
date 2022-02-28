@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "i/54b6tID5ybiM9eKKnbSSFG4PPYK0h9RO5NgdmgCE8ja1VZ3c368TJZEKG1VS9Jcd3xe5eX+YiB9iUOZt4ytw==",
   "success": true,
   "projectFilePath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+=======
+  "dgSpecHash": "rvfEuRfLzo7oBetw4MjLREIbsQGlSFUIGTZx5/So/rEcAqMHE4HNdfrhnBfFmtkRmo1b+0OIeJ/Jj8Hai2JhZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }

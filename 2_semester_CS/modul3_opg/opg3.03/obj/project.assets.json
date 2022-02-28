@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.03\\opg3.03.csproj",
       "projectName": "opg3.03",
       "projectPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.03\\opg3.03.csproj",
       "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.03\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.03\\opg3.03.csproj",
+      "projectName": "opg3.03",
+      "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.03\\opg3.03.csproj",
+      "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.03\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",

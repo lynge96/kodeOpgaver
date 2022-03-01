@@ -30,7 +30,6 @@ C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\n
 C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.genruntimeconfig.cache
 C:\Users\lynge\Desktop\opgave-filer\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\ref\opg3.05.dll
 =======
-<<<<<<< Updated upstream
 C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.exe
 C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.deps.json
 C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.runtimeconfig.json
@@ -46,6 +45,19 @@ C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\n
 C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.pdb
 C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.genruntimeconfig.cache
 C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\ref\opg3.05.dll
-=======
 >>>>>>> Stashed changes
->>>>>>> Stashed changes
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.exe
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.deps.json
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.runtimeconfig.json
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\bin\Debug\net6.0\opg3.05.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.csproj.AssemblyReference.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.AssemblyInfoInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.AssemblyInfo.cs
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.csproj.CoreCompileInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\refint\opg3.05.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\opg3.05.genruntimeconfig.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul3_opg\opg3.05\obj\Debug\net6.0\ref\opg3.05.dll

@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "i/54b6tID5ybiM9eKKnbSSFG4PPYK0h9RO5NgdmgCE8ja1VZ3c368TJZEKG1VS9Jcd3xe5eX+YiB9iUOZt4ytw==",
+  "dgSpecHash": "pwg41UNU+5kAYb2vRTKY+EnITj2iwOkhIARGKYqshlnWOQa65EVLR8aEfdHqn5BahE7iDkSE9WCNurOTu889AQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
-=======
-  "dgSpecHash": "rvfEuRfLzo7oBetw4MjLREIbsQGlSFUIGTZx5/So/rEcAqMHE4HNdfrhnBfFmtkRmo1b+0OIeJ/Jj8Hai2JhZA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
->>>>>>> Stashed changes
+  "projectFilePath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

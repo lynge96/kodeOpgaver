@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+      "projectUniqueName": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
       "projectName": "opg3.05",
-      "projectPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
+      "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
       "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lynge\\Desktop\\opgave-filer\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
-      "projectName": "opg3.05",
-      "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\opg3.05.csproj",
-      "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\",
->>>>>>> Stashed changes
+      "outputPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,5 +63,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.05\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -19,3 +19,5 @@ Console.WriteLine($"Lars er en {Lars.getSex()}");
 
 // Printer fødselsdag for Lars:
 Console.WriteLine($"Lars har fødselsdag d. {Lars.getBirthday()}");
+
+// Printer alder for Lars:

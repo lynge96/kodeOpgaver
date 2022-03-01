@@ -67,9 +67,11 @@ namespace opg4._05
         // getBirthday() metode
         public DateTime getBirthday()
         {
-            var dato = new DateTime(int.Parse(_CPRno.Substring(4, 6)), int.Parse(_CPRno.Substring(2, 4)), int.Parse(_CPRno.Substring(0, 2)));
+            DateTime dato;
+            dato = DateTime.ParseExact(_CPRno.Substring(0, 6), "ddMMyy", System.Globalization.CultureInfo.InvariantCulture);
             return dato;
         }
         // getAge() metode
+        
     }
 }

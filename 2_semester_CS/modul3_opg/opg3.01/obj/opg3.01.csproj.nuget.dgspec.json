@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\modul3_opg\\opg3.01.csproj": {}
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.01\\opg3.01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\modul3_opg\\opg3.01.csproj": {
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.01\\opg3.01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\modul3_opg\\opg3.01.csproj",
+        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.01\\opg3.01.csproj",
         "projectName": "opg3.01",
-        "projectPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\modul3_opg\\opg3.01.csproj",
+        "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.01\\opg3.01.csproj",
         "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Desktop\\kode-opgave-filer\\2_semester_CS\\modul3_opg\\modul3_opg\\obj\\",
+        "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul3_opg\\opg3.01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",

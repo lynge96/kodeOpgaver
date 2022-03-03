@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace opg4._05
 {
@@ -67,11 +68,28 @@ namespace opg4._05
         // getBirthday() metode
         public DateTime getBirthday()
         {
-            DateTime dato;
-            dato = DateTime.ParseExact(_CPRno.Substring(0, 6), "ddMMyy", System.Globalization.CultureInfo.InvariantCulture);
+            DateTime dato = DateTime.ParseExact(_CPRno.Substring(0, 6), "ddMMyy", CultureInfo.InvariantCulture);
             return dato;
         }
         // getAge() metode
-        
+        public Byte getAge()
+        {
+            DateTime datoNu = DateTime.Now;
+            DateTime datoFødsel = DateTime.ParseExact(_CPRno.Substring(0, 6), "ddMMyy", CultureInfo.InvariantCulture);
+
+            TimeSpan alder = datoNu.Subtract(datoFødsel);
+
+            if (Math.Floor(alder.TotalDays / 365) < 0)
+            {
+                double år = Math.Floor(alder.TotalDays / 365) + 92;
+                return Convert.ToByte(Math.Floor(år));
+            }
+            else if (Math.Floor(alder.TotalDays / 365) > 0)
+            {
+                double år = Math.Floor(alder.TotalDays / 365);
+                return Convert.ToByte(Math.Floor(år));
+            }
+            return getAge();          
+        }
     }
 }

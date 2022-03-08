@@ -15,7 +15,6 @@ Console.WriteLine(eksempel.ToString());
 Deck_of_cards stack = new Deck_of_cards();
 
 // Spil krig
-
 int player1 = 0;
 int player2 = 0;
 int uafgjort = 0;
@@ -40,7 +39,10 @@ for (int i = 0; i < 52; i++)
         player2++;
     }
 }
-Console.WriteLine($"\nPlayer 1 point:\t{player1}\nPlayer 2 point:\t{player2}\n\nOg {uafgjort} uafgjorte runder!\n");
+Console.WriteLine($"" +
+    $"\nPlayer 1 point:\t{player1}" +
+    $"\nPlayer 2 point:\t{player2}" +
+    $"\n\nOg {uafgjort} uafgjorte runder!\n");
 if (player1 > player2)
 {
     Console.ForegroundColor = ConsoleColor.DarkGreen;

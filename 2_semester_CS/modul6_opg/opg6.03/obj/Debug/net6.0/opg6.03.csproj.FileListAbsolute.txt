@@ -1,0 +1,15 @@
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\bin\Debug\net6.0\opg6.03.exe
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\bin\Debug\net6.0\opg6.03.deps.json
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\bin\Debug\net6.0\opg6.03.runtimeconfig.json
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\bin\Debug\net6.0\opg6.03.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\bin\Debug\net6.0\opg6.03.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.csproj.AssemblyReference.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.AssemblyInfoInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.AssemblyInfo.cs
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.csproj.CoreCompileInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\refint\opg6.03.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\opg6.03.genruntimeconfig.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul6_opg\opg6.03\obj\Debug\net6.0\ref\opg6.03.dll

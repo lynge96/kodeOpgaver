@@ -1,0 +1,24 @@
+﻿@page "/counter"
+
+<PageTitle>Booper</PageTitle>
+
+<h1>Booper</h1>
+
+<p role="status">Total count: @currentCount</p>
+<p role="status">Random count: @randomCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Boop</button>
+
+@code {
+    private static Random rnd = new Random();
+
+    private static int currentCount = 0;
+
+    private int randomCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+        randomCount = rnd.Next(0, currentCount + 1);
+    }
+}

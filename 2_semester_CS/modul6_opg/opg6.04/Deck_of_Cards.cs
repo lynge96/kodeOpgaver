@@ -23,11 +23,11 @@ namespace opg6._04
                     _cards.Push(new Card(suit[i], j));
                 }
             }
-            //shuffle();
-            foreach (Card kort in _cards)
-            {
-                Console.WriteLine(kort);
-            }
+            shuffle();
+            //foreach (Card kort in _cards)
+            //{
+            //    Console.WriteLine(kort);
+            //}
         }
         // Metode til getCard():
         public Card getCard()

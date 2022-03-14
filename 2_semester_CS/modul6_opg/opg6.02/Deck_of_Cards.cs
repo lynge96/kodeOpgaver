@@ -24,6 +24,10 @@ namespace opg6._02
                 }
             }
             shuffle();
+            //foreach (Card kort in _cards)
+            //{
+            //    Console.WriteLine(kort);
+            //}
         }
         // Metode til getCard():
         public Card getCard()

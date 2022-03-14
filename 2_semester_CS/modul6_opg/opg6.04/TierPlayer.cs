@@ -10,15 +10,16 @@ namespace opg6._04
     public class TierPlayer : Player
     {
         // Variabel
-        private Deck_of_cards deck;
+        private TierDeck_of_cards deck;
 
         // Property
-        public Deck_of_cards PlayerDeck
+        public TierDeck_of_cards PlayerDeck
         {
             get { return deck; }
         }
+
         // Constructor
-        public TierPlayer(String navn, int point, Deck_of_cards deck) : base(navn, point)
+        public TierPlayer(String player, int point, TierDeck_of_cards deck) : base(player, point)
         {
             this.deck = deck;
         }

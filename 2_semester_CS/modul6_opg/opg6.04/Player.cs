@@ -9,16 +9,16 @@ namespace opg6._04
     public class Player
     {
         // Variabler
-        private String navn;
+        private String player;
         private int point;
 
         // Properties
-        public String SpillerNavn
+        public String PlayerNavn
         {
-            get { return navn; }
-            set { navn = value; }
+            get { return player; }
+            set { player = value; }
         }
-        public int PointSum
+        public int PlayerPoint
         {
             get { return point; }
             set { point = value; }
@@ -27,7 +27,7 @@ namespace opg6._04
         // Constructor
         public Player(String navn, int point)
         {
-            this.navn = navn;
+            this.player = navn;
             this.point = point;
         }
     }

@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 using opg6._04;
 
 // Opretter to spillere:
-TierPlayer Player1 = new TierPlayer("Anders", 0, new Deck_of_cards());
-TierPlayer Player2 = new TierPlayer("Rikke", 0, new Deck_of_cards());
+Console.WriteLine("Player 1:");
+TierPlayer Player1 = new TierPlayer("Anders", 0, new TierDeck_of_cards());
+Console.WriteLine("\nPlayer 2:");
+TierPlayer Player2 = new TierPlayer("Rikke", 0, new TierDeck_of_cards());
 
+for (int i = 0; i < 7; i++)
+{
+
+}

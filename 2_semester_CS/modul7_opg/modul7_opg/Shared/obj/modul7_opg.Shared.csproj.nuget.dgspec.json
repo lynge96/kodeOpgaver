@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {}
+    "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
+    "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
         "projectName": "modul7_opg.Shared",
-        "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
-        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
+        "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

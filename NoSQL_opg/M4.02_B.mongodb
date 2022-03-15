@@ -1,0 +1,34 @@
+use('caloriesdb');
+
+// Opgave B - Pipeline med Sorting
+// Brug en aggregerings-pipeline til at lave følgende udtræk:
+
+// a) For hver mad-kategori beregn gennemsnittet af kalorieantallet. Medtag kun væsker og sortér resultatet med højeste gennemsnit først.
+
+db.calories.aggregate(
+  [
+    {$match: {"per100grams": "100ml"}},
+    {$group: {_id: "$FoodCategory", avgCal: {$avg: "$Cals_per100grams" }}},
+    {$sort: {avgCal: -1}}
+  ]
+)
+
+// b) Hvor mange fødevarer er der i hver madkategori hvor kalorieantallet er over 300. Sortér resultatet med laveste antal øverst.
+
+db.calories.aggregate(
+  [
+    {$match: {"Cals_per100grams": {$gt: 300}}},
+    {$group: {_id: "$FoodCategory", total: {$count: {} }}},
+    {$sort: {total: 1}}
+  ]
+)
+
+// c) Hvad er den mest kalorieholdige fødevarer i hver madkategori? Sortér med flest kalorier øverst.
+
+db.calories.aggregate(
+  [
+    {$project: {_id : 1, FoodCategory : 1, FoodItem : 1, Cals_per100grams : 1}},
+    {$group: {_id: "$FoodCategory", FoodItem: "$FoodItem", maxCal: {$max: "$Cals_per100grams" }}},
+    {$sort: {maxCal: -1}}
+  ]
+)

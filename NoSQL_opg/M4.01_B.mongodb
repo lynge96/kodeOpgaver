@@ -1,0 +1,29 @@
+use('caloriesdb');
+
+// Opgave B - Udforsk mad-dataene
+// Brug nu MongoDB find()-funktionen med de rette filtrer for at svare på de følgende spørgsmål.
+
+// a) Hvor mange FoodItems har flere end 750 kalorier per 100g?
+
+db.calories.find({"Cals_per100grams": {$gt: 750}}, {"FoodItem": 1}).count();
+// 65
+
+
+// b) List alle FoodItems hvor der er færre end 10 kalorier per 100g i.
+
+db.calories.find({"Cals_per100grams": {$lt: 10}}, {"FoodItem": 1});
+
+
+// c) List alle FoodItems hvor der er færre end 20 kalorier per 100g OG som IKKE er en væske.
+
+db.calories.find({"Cals_per100grams": {$lt: 20}, "per100grams": "100g"}, {"FoodItem": 1});
+
+
+// d) Udvid udtrykket fra c) til kun at vise madnavnet & antal kalorier per 100g.
+
+db.calories.find({"Cals_per100grams": {$lt: 20}, "per100grams": "100g"}, {"FoodItem": 1, "Cals_per100grams": 1, "_id": 0});
+
+// e) Hvor mange FoodItem(s) findes der i databasen som er dåsemad? (Hint: starter med "Canned")
+
+db.calories.find({"FoodCategory": "CannedFruit"}, {"FoodItem": 1}).count();
+// 29

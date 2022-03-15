@@ -1,0 +1,31 @@
+use('caloriesdb');
+
+// Opgave A - Match & Group
+// Brug en aggregeringspipeline til at svare på følgende spørgsmål omkring dataene i kaloriedatasættet:
+
+// a) Hvor mange fødevarer (FoodItems) er der i hver madkategori?
+
+db.calories.aggregate(
+  [
+    {$group:{_id: "$FoodCategory", total:{$count:{}}}}
+  ]
+);
+
+// b) Hvor mange fødevarer er der i hver madkategori, som er væsker?
+
+db.calories.aggregate(
+  [
+    {$match: {"per100grams": "100ml"}},
+    {$group: {_id: "$FoodCategory", total: {$count: {} }}}
+  ]
+);
+
+// c) Hvor mange kalorier indtager man hvis man drikker et glas på 100ml fra alle elementerne i "Milk&DairyProducts"?
+
+db.calories.aggregate(
+  [
+    {$match: {"FoodCategory": "Milk&DairyProducts"}},
+    {$group: {_id: "$FoodCategory", total: {$sum: "$Cals_per100grams" }}}
+  ]
+);
+// 4603

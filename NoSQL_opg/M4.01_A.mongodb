@@ -1,0 +1,17 @@
+use('caloriesdb');
+
+// Opgave A - Import af kalorie-data
+// a) Tælle hvor mange dokumenter der er i databasen:
+
+db.calories.count();
+// 2225 dokumenter
+
+// b) Brug distinct()-funktionen til at lave et udtræk for at finde de forskellige madkategorier der findes i databasen. Brug length til at tælle resultatet.
+
+db.calories.distinct("FoodCategory").length;
+// 44
+
+// c) Hvor mange forskellige forekomster er der i per100grams attributten?
+
+db.calories.distinct("per100grams");
+// "100g" og "100ml"

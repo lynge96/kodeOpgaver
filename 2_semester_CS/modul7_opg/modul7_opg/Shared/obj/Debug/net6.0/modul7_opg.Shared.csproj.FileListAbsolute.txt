@@ -10,3 +10,15 @@ C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\ob
 C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\refint\modul7_opg.Shared.dll
 C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.pdb
 C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\ref\modul7_opg.Shared.dll
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\bin\Debug\net6.0\modul7_opg.Shared.deps.json
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\bin\Debug\net6.0\modul7_opg.Shared.dll
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\bin\Debug\net6.0\modul7_opg.Shared.pdb
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.csproj.AssemblyReference.cache
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.AssemblyInfoInputs.cache
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.AssemblyInfo.cs
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.dll
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\refint\modul7_opg.Shared.dll
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\modul7_opg.Shared.pdb
+C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\modul7_opg\Shared\obj\Debug\net6.0\ref\modul7_opg.Shared.dll

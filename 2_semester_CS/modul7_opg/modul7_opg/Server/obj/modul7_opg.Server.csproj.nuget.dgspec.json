@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj": {}
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj": {
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj",
         "projectName": "modul7_opg.Client",
-        "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj",
-        "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\obj\\",
+        "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj",
+        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
-                "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj"
+              "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
+                "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj"
               }
             }
           }
@@ -67,7 +67,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.2, 6.0.2]"
+              "version": "[6.0.3, 6.0.3]"
             }
           ],
           "frameworkReferences": {
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -84,17 +84,17 @@
         }
       }
     },
-    "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj": {
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj",
         "projectName": "modul7_opg.Server",
-        "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj",
-        "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\obj\\",
+        "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\modul7_opg.Server.csproj",
+        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,11 +108,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj": {
-                "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj"
+              "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj": {
+                "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Client\\modul7_opg.Client.csproj"
               },
-              "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
-                "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj"
+              "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
+                "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj"
               }
             }
           }
@@ -150,21 +150,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
+    "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
         "projectName": "modul7_opg.Shared",
-        "projectPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
-        "packagesPath": "C:\\Users\\lynge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\modul7_opg.Shared.csproj",
+        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anders\\Desktop\\kodeOpgaver\\2_semester_CS\\modul7_opg\\modul7_opg\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lynge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -204,7 +204,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

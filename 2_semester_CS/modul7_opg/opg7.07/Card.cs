@@ -46,16 +46,16 @@ namespace _7._07
         {
             if (_rank == 11)
             {
-                return _suit + " knægt";
+                return _suit + " Knægt";
             }
             else if (_rank == 12)
             {
-                return _suit + " dame";
+                return _suit + " Dame";
             } else if (_rank == 13)
             {
-                return _suit + " konge";
+                return _suit + " Konge";
             } else if (_rank == 14) {
-                return _suit + " es";
+                return _suit + " Es";
             } else
             {
                 return _suit + " " + _rank;

@@ -7,14 +7,14 @@
 // Opretter et to-dimensionelt array:
 String[,] array2d;
 // 2 rækker, 3 kolonner.
-array2d = new String[2, 3] { { "Anders", "Lynge", "Ravnsbæk" }, { "Rikke", "Schouby", "Hein" } };
+array2d = new String[,] { { "Anders", "Lynge", "Ravnsbæk" }, { "Rikke", "Schouby", "Hein" } };
 Console.BackgroundColor = ConsoleColor.DarkBlue;
 Console.WriteLine("Printer to-dimensionelt array:");
 Console.ResetColor();
 // Udskriver hele arrayet.
-for (int i = 0; i < 2; i++)
+for (int i = 0; i < array2d.GetLength(0); i++) // .GetLength(0) finder antal rows.
 {
-    for (int j = 0; j < 3; j++)
+    for (int j = 0; j < array2d.GetLength(1); j++) // .GetLength(1) finder antal kolonner.
     {
         if (j == 2)
         {

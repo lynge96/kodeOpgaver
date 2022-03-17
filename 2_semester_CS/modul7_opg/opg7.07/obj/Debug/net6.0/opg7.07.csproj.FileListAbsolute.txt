@@ -1,0 +1,15 @@
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\bin\Debug\net6.0\opg7.07.exe
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\bin\Debug\net6.0\opg7.07.deps.json
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\bin\Debug\net6.0\opg7.07.runtimeconfig.json
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\bin\Debug\net6.0\opg7.07.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\bin\Debug\net6.0\opg7.07.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.csproj.AssemblyReference.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.AssemblyInfoInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.AssemblyInfo.cs
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.csproj.CoreCompileInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\refint\opg7.07.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\opg7.07.genruntimeconfig.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul7_opg\opg7.07\obj\Debug\net6.0\ref\opg7.07.dll

@@ -27,9 +27,9 @@ namespace _7._07
         {
             for (int i = 0; i < 2; i++)
             {
-                dealer.Kort.Push(spilDeck.getCard());
                 player.Kort.Push(spilDeck.getCard());
             }
+            dealer.Kort.Push(spilDeck.getCard());
 
             viskort(player.Kort, player.Navn, spilDeck, dealer);
 
@@ -133,7 +133,7 @@ namespace _7._07
                         Console.WriteLine($"Dealerens kort:" +
                             $"\n{dealer.Kort.Peek()}\n");
 
-                        Console.WriteLine($"Dealer har lige nu en sum af: {sumafkort(dealer.Kort)} og trækker derfor et kort til!");
+                        Console.WriteLine($"Dealer har lige nu en sum af: {sumafkort(dealer.Kort)} og trækker derfor et kort til!\n");
                         dealer.Kort.Push(spilDeck.getCard());
                     }
                   

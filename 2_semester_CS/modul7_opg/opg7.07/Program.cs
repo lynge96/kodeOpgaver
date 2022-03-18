@@ -45,10 +45,14 @@ namespace _7._07
 
             foreach (Card obj in deck)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.Write($"{obj}   ");
+                Console.ResetColor();
             }
             Console.WriteLine("\n\nDealerens kort:");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Write($"{dealer.Kort.Peek()}\n\n");
+            Console.ResetColor();
         }
 
         public static int sumafkort(Stack<Card> deck)
@@ -106,7 +110,12 @@ namespace _7._07
                 {
                     dealer.Antalpoint++;
 
-                    Console.WriteLine($"Du fik {sumafkort(player.Kort)} og har derfor tabt! Dealeren vinder og stillingen er nu:");
+                    Console.Write($"Du fik ");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write($"{sumafkort(player.Kort)}");
+                    Console.ResetColor();
+                    Console.Write(" og har derfor tabt! Dealeren vinder og stillingen er nu:");
+
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine($"{player.Navn}: {player.Antalpoint} og Dealer: {dealer.Antalpoint}");
                     Console.ResetColor();
@@ -114,7 +123,9 @@ namespace _7._07
                     emptyStack(player.Kort, spilDeck);
                     emptyStack(dealer.Kort, spilDeck);
 
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("\nDu trækker to nye kort!\n");
+                    Console.ResetColor();
 
                     Blackjack(player, dealer, spilDeck);
 
@@ -130,20 +141,72 @@ namespace _7._07
                 Console.WriteLine();
                 for (int i = sumafkort(dealer.Kort); i < 17; i = sumafkort(dealer.Kort))
                     {
-                        Console.WriteLine($"Dealerens kort:" +
-                            $"\n{dealer.Kort.Peek()}\n");
+                        Console.WriteLine($"Dealerens kort:");
+                        foreach (Card card in dealer.Kort)
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            Console.Write($"{card}   ");
+                            Console.ResetColor();
+                        }
 
-                        Console.WriteLine($"Dealer har lige nu en sum af: {sumafkort(dealer.Kort)} og trækker derfor et kort til!\n");
+                        Console.Write($"\n\nDealer har lige nu en sum af: ");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.Write($"{sumafkort(dealer.Kort)}");
+                        Console.ResetColor();
+                        Console.Write(" og trækker derfor et kort til!\n");
                         dealer.Kort.Push(spilDeck.getCard());
+                        Thread.Sleep(1000);
                     }
-                  
-                // Ændre dealer point her
-                Console.WriteLine($"Dealer vælger stand på en sum af: {sumafkort(dealer.Kort)}\n");
+
+                if (sumafkort(dealer.Kort) > 21)
+                {
+                    player.Antalpoint++;
+
+                    Console.Write($"\nDealer fik ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write($"{sumafkort(dealer.Kort)} ");
+                    Console.ResetColor();
+                    Console.Write($"og har derfor tabt! {player.Navn} vinder og stillingen er nu:\n");
+
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine($"{player.Navn}: {player.Antalpoint} og Dealer: {dealer.Antalpoint}");
+                    Console.ResetColor();
+
+                    emptyStack(player.Kort, spilDeck);
+                    emptyStack(dealer.Kort, spilDeck);
+
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                    Console.Write("\nDu trækker to nye kort!\n");
+                    Console.ResetColor();
+
+                    Blackjack(player, dealer, spilDeck);
+
+                }
+
+                foreach (Card card in dealer.Kort)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.Write($"{card}   ");
+                    Console.ResetColor();
+                }
+                Console.Write($"\n\nDealer vælger stand på en sum af: ");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.Write($"{sumafkort(dealer.Kort)}\n");
+                Console.ResetColor();
 
                 if (sumafkort(player.Kort) > sumafkort(dealer.Kort))
                 {
-                    Console.WriteLine($"{player.Navn} vinder med en hånd på {sumafkort(player.Kort)} over dealerens {sumafkort(dealer.Kort)}!" +
-                        $"\n\nStillingen er nu:");
+                    Console.Write($"{player.Navn} vinder med en hånd på ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write($"{sumafkort(player.Kort)}");
+                    Console.ResetColor();
+                    Console.Write(" over dealerens ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write($"{sumafkort(dealer.Kort)}");
+                    Console.ResetColor();
+                    Console.Write("\n\nStillingen er nu:\n");
+
+
                     player.Antalpoint++;
                     emptyStack(player.Kort, spilDeck);
                     emptyStack(dealer.Kort, spilDeck);
@@ -156,8 +219,17 @@ namespace _7._07
 
                 } else if (sumafkort(dealer.Kort) > sumafkort(player.Kort))
                 {
-                    Console.WriteLine($"Dealeren vinder med en hånd på {sumafkort(dealer.Kort)} over {player.Navn}s {sumafkort(player.Kort)}!" +
-                        $"\n\nStillingen er nu:");
+                    Console.Write($"Dealeren vinder med en hånd på ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write($"{sumafkort(dealer.Kort)}");
+                    Console.ResetColor();
+                    Console.Write($" over {player.Navn}s ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write($"{sumafkort(player.Kort)}");
+                    Console.ResetColor();
+                    Console.Write("\n\nStillingen er nu:\n");
+
+
                     dealer.Antalpoint++;
                     emptyStack(player.Kort, spilDeck);
                     emptyStack(dealer.Kort, spilDeck);
@@ -170,7 +242,9 @@ namespace _7._07
 
                 } else
                 {
-                    Console.WriteLine("UAFGJORT! Spillet fortsætter");
+                    Console.BackgroundColor = ConsoleColor.DarkGreen;
+                    Console.Write("\nUAFGJORT! Spillet fortsætter\n");
+                    Console.ResetColor();
 
                     emptyStack(player.Kort, spilDeck);
                     emptyStack(dealer.Kort, spilDeck);
@@ -211,14 +285,16 @@ namespace _7._07
 
             } else
             {
-                Console.WriteLine("Vil du spille videre? (Ja / Nej)");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("\nVil du spille videre? (Ja / Nej)");
+                Console.ResetColor();
                 string svar = Console.ReadLine();
 
                 if (svar.ToLower() == "ja")
                 {
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.BackgroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine("\n\nNyt Spil!");
+                    Console.Write("\nNyt Spil!\n");
                     Console.ResetColor();
                     emptyStack(player.Kort, spilDeck);
                     emptyStack(dealer.Kort, spilDeck);

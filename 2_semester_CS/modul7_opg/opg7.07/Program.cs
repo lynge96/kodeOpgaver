@@ -15,6 +15,7 @@ namespace _7._07
             Console.ResetColor();
 
             string navn = Console.ReadLine();
+            Random rng = new Random();
 
             Deck_of_Cards deck = new Deck_of_Cards();
             Person Dealer = new Person("Dealer", 0, new Stack<Card>());
@@ -114,11 +115,13 @@ namespace _7._07
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write($"{sumafkort(player.Kort)}");
                     Console.ResetColor();
-                    Console.Write(" og har derfor tabt! Dealeren vinder og stillingen er nu:");
+                    Console.Write(" og har derfor tabt! Dealeren vinder og stillingen er nu:\n");
 
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine($"{player.Navn}: {player.Antalpoint} og Dealer: {dealer.Antalpoint}");
                     Console.ResetColor();
+
+                    Thread.Sleep(1000);
 
                     emptyStack(player.Kort, spilDeck);
                     emptyStack(dealer.Kort, spilDeck);
@@ -150,12 +153,13 @@ namespace _7._07
                         }
 
                         Console.Write($"\n\nDealer har lige nu en sum af: ");
-                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
                         Console.Write($"{sumafkort(dealer.Kort)}");
                         Console.ResetColor();
                         Console.Write(" og trækker derfor et kort til!\n");
                         dealer.Kort.Push(spilDeck.getCard());
-                        Thread.Sleep(1000);
+
+                        Thread.Sleep(1300);
                     }
 
                 if (sumafkort(dealer.Kort) > 21)
@@ -163,7 +167,7 @@ namespace _7._07
                     player.Antalpoint++;
 
                     Console.Write($"\nDealer fik ");
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
                     Console.Write($"{sumafkort(dealer.Kort)} ");
                     Console.ResetColor();
                     Console.Write($"og har derfor tabt! {player.Navn} vinder og stillingen er nu:\n");
@@ -171,6 +175,8 @@ namespace _7._07
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine($"{player.Navn}: {player.Antalpoint} og Dealer: {dealer.Antalpoint}");
                     Console.ResetColor();
+
+                    Thread.Sleep(1000);
 
                     emptyStack(player.Kort, spilDeck);
                     emptyStack(dealer.Kort, spilDeck);
@@ -190,7 +196,7 @@ namespace _7._07
                     Console.ResetColor();
                 }
                 Console.Write($"\n\nDealer vælger stand på en sum af: ");
-                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write($"{sumafkort(dealer.Kort)}\n");
                 Console.ResetColor();
 
@@ -201,7 +207,7 @@ namespace _7._07
                     Console.Write($"{sumafkort(player.Kort)}");
                     Console.ResetColor();
                     Console.Write(" over dealerens ");
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
                     Console.Write($"{sumafkort(dealer.Kort)}");
                     Console.ResetColor();
                     Console.Write("\n\nStillingen er nu:\n");
@@ -215,12 +221,14 @@ namespace _7._07
                     Console.WriteLine($"{player.Navn}: {player.Antalpoint} og Dealer: {dealer.Antalpoint}\n");
                     Console.ResetColor();
 
+                    Thread.Sleep(1000);
+
                     spilVidere(player, dealer, spilDeck);
 
                 } else if (sumafkort(dealer.Kort) > sumafkort(player.Kort))
                 {
                     Console.Write($"Dealeren vinder med en hånd på ");
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
                     Console.Write($"{sumafkort(dealer.Kort)}");
                     Console.ResetColor();
                     Console.Write($" over {player.Navn}s ");
@@ -237,6 +245,8 @@ namespace _7._07
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine($"{player.Navn}: {player.Antalpoint} og Dealer: {dealer.Antalpoint}\n");
                     Console.ResetColor();
+
+                    Thread.Sleep(1000);
 
                     spilVidere(player, dealer, spilDeck);
 

@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
+      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -853,19 +853,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-ID4S93lbTSGXx1UyOOUjQOqEQ2h1SHwHWGV3wo3pcRM=",
+      "hash": "sha256-cOZUhWrioOpLb5Rbu2KhEjH2mR5TbvKJs8CnSK8tP+o=",
       "url": "_framework\/modul7_opg.Shared.dll"
     },
     {
-      "hash": "sha256-mcqCqzyupTUXr\/6r9\/pBDeFvV2McCVbz7CgxRitEMJU=",
+      "hash": "sha256-k9fauil\/lcmYGyRC8tcYWtPmIu5NR2rvZgpYoBMvdLI=",
       "url": "_framework\/modul7_opg.Shared.pdb"
     },
     {
-      "hash": "sha256-4jKpSTsE0nhwYsE9g\/fcXuZ9mNYJ9k7JeE2Uk1roxKk=",
+      "hash": "sha256-qV01FvWiFONGIxcEfFYY4Te3\/DtXVwlX\/G0o2lSYLlI=",
       "url": "_framework\/modul7_opg.Client.dll"
     },
     {
-      "hash": "sha256-5fKUxH5ZGyogNABtyqD9JNpW1Nfus6vT6sRBRX6j2MA=",
+      "hash": "sha256-+p7r4U17LbUD6xuKEiWBbUTdXN+fwltBtftVNk1Lo+k=",
       "url": "_framework\/modul7_opg.Client.pdb"
     },
     {
@@ -873,13 +873,13 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-ZKqqRrb9xJWO0cuT0tr4TSTrczhKL4n4hWPoyXCGHiA=",
+      "hash": "sha256-kcfSnsYZ+H80I0LCuCJ2i3jw05DSUzy5lv\/ibLOMd6Y=",
       "url": "_framework\/blazor.boot.json"
     },
     {
       "hash": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",
-      "url": "_framework\/dotnet.6.0.3.kkgvsauf55.js"
+      "url": "_framework\/dotnet.6.0.3.1fuyws4ib0.js"
     }
   ],
-  "version": "VoMGUyAB"
+  "version": "iwDyJT4x"
 };

@@ -1,0 +1,86 @@
+﻿@page "/shoppinglist"
+@using opg9._02.Shared
+@inject HttpClient Http
+
+<PageTitle>Shopping List</PageTitle>
+<h1>Shopping List</h1>
+<br />
+<h3>Indkøbsliste (mangler: @NetflixNChill.Count(shopping => !shopping.IsDone))</h3>
+<br />
+
+<input placeholder="Nyt indkøb" @bind="newItem" />
+<button @onclick="AddShoppingItem">Tilføj indkøb</button>
+
+<ul>
+    @foreach (var item in NetflixNChill)
+    {
+        <li>
+            <input type="checkbox" @bind="item.IsDone" />
+            <input @bind="item.Title" />
+        </li>
+    }
+</ul>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in NetflixNChill)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.IsDone</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<h3>JASON DATA</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Coffee)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.IsDone</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+@code {
+    private List<ShoppingItem>? NetflixNChill;
+    private string newItem;
+    private List<ShoppingItem>? Coffee;
+
+    protected override async Task OnInitializedAsync()
+    {
+        NetflixNChill = await Http.GetFromJsonAsync<List<ShoppingItem>>("NetflixNChill");
+        Coffee = await Http.GetFromJsonAsync<List<ShoppingItem>>("Coffee");
+    }
+
+    private void AddShoppingItem()
+    {
+        if (!string.IsNullOrWhiteSpace(newItem))
+        {
+            NetflixNChill.Add(new opg9._02.Shared.ShoppingItem { Title = newItem });
+            newItem = string.Empty;
+        }
+    }
+
+
+}

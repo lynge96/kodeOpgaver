@@ -1,0 +1,12 @@
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\bin\Debug\net6.0\opg9.02.Shared.deps.json
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\bin\Debug\net6.0\opg9.02.Shared.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\bin\Debug\net6.0\opg9.02.Shared.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\opg9.02.Shared.csproj.AssemblyReference.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\opg9.02.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\opg9.02.Shared.AssemblyInfoInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\opg9.02.Shared.AssemblyInfo.cs
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\opg9.02.Shared.csproj.CoreCompileInputs.cache
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\opg9.02.Shared.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\refint\opg9.02.Shared.dll
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\opg9.02.Shared.pdb
+C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\opg9.02\Shared\obj\Debug\net6.0\ref\opg9.02.Shared.dll

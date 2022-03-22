@@ -1,0 +1,30 @@
+[
+  {
+    "Title": "Black",
+    "IsDone": true
+  },
+  {
+    "Title": "Latte",
+    "IsDone": false
+  },
+  {
+    "Title": "Cappuccino",
+    "IsDone": false
+  },
+  {
+    "Title": "Americano",
+    "IsDone": true
+  },
+  {
+    "Title": "Doppio",
+    "IsDone": false
+  },
+  {
+    "Title": "Cortado",
+    "IsDone": false
+  },
+  {
+    "Title": "Mocha",
+    "IsDone":  false
+  }
+]

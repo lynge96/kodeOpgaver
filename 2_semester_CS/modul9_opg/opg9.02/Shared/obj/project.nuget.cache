@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3zLrz/YacDbSemIdicsyCSqLGSFkcyU6402+nAl8CZyHEEIrJ1h4Pnz7+LLJthzUP8KRiBE3Ubet0ThA6t8kAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lynge\\Desktop\\kodeOpgaver\\2_semester_CS\\modul9_opg\\opg9.02\\Shared\\opg9.02.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lynge\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

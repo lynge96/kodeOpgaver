@@ -19,14 +19,38 @@ namespace modul17_opg
         // Metoder
         public void KastTerningerne()
         {
-            Færdig = false;
-
             Terninger.ThrowDices();
+            Console.WriteLine($"\n{PlayerNavn} kaster terningerne og slår {Terninger.Terning1.show()} og {Terninger.Terning2.show()}\n");
 
-            Console.WriteLine($"\n{PlayerNavn} kaster terningerne og slår {Terninger.Terning1.show()} og {Terninger.Terning2.show()}");
+            if (Terninger.Terning1.show() == 1 && Terninger.Terning2.show() == 1)
+            {
+                Thread.Sleep(750);
 
-            PointDenneRunde();
-            Console.WriteLine($"Samlet point denne runde: {pointRunde}");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Begge terninger landede på 1, så du mister alle dine point...");
+                Console.ResetColor();
+                PlayerPoint = 0;
+
+                EndTurn();
+            } 
+            else if (Terninger.Terning1.show() == 1 || Terninger.Terning2.show() == 1)
+            {
+                Thread.Sleep(750);
+
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("Den ene terning landede på 1, så du mister alle point i denne runde...");
+                Console.ResetColor();
+
+                EndTurn();
+            }
+            else
+            {
+                Thread.Sleep(500);
+
+                PointDenneRunde();
+                Console.WriteLine($"Samlede point denne runde: {pointRunde}");
+            }
+
         }
 
         private int PointDenneRunde()
@@ -36,22 +60,22 @@ namespace modul17_opg
             return pointRunde;
         }
 
-        private int PointSamlet()
+        public int PointSamlet()
         {
             PlayerPoint += pointRunde;
-
-            Console.WriteLine($"{PlayerNavn} score er nu {PlayerPoint}!");
+            pointRunde = 0;
 
             return PlayerPoint;
         }
 
         public int EndTurn()
         {
-            int pointRunde = 0;
+            Thread.Sleep(750);
+
+            pointRunde = 0;
             Færdig = true;
 
-            PointSamlet();
-            Console.WriteLine("Turen er nu slut.");
+            Console.WriteLine($"\nTuren er nu slut.\n{PlayerNavn} samlede score er nu {PlayerPoint}.");
 
             return pointRunde;
         }

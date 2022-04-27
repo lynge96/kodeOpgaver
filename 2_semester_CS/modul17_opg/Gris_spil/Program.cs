@@ -1,6 +1,7 @@
 ﻿using modul17_opg;
 
 Console.WriteLine("Lad os spille gris!\n\nHvad er dit navn?");
+Console.Write(">");
 string navn = Console.ReadLine();
 
 GrisPlayer spiller = new(navn, 0, false, new PairOfDice(new Dice(), new Dice()));
@@ -22,7 +23,6 @@ Gris(spiller, computer, vinderTal, computerHandicap);
 static void Gris(GrisPlayer spiller, GrisPlayer computer, int vinderTal, int computerHandicap)
 {
     // Spiller Logic
-
     if (spiller.PlayerPoint + spiller.pointRunde < vinderTal)
     {
         while (spiller.Færdig == false)
@@ -30,29 +30,34 @@ static void Gris(GrisPlayer spiller, GrisPlayer computer, int vinderTal, int com
 
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"\nNuværende stilling" +
-                $"\n\t{spiller.PlayerNavn}: {spiller.PlayerPoint}" +
-                $"\n\t{computer.PlayerNavn}: {computer.PlayerPoint}\n" +
-                $"\nVil du kaste eller stoppe? (k / s)");
+                $"\n\t>{spiller.PlayerNavn}: {spiller.PlayerPoint}" +
+                $"\n\t>{computer.PlayerNavn}: {computer.PlayerPoint}\n" +
+                $"\nVil du kaste eller stoppe? (Tryk K/S)");
             Console.ResetColor();
-            string input = Console.ReadLine();
 
-            if (input.ToLower() == "k")
+            // Input til Kast eller Stop
+            // Tager tastetur tryk som input.
+            Console.Write(">");
+            ConsoleKeyInfo key = Console.ReadKey();
+
+            if (key.KeyChar == 'k') // Trykker 'k' for at kaste igen.
             {
                 spiller.KastTerningerne();
             }
-            else if (input.ToLower() == "s")
+            else if (key.KeyChar == 's') // Trykker 's' for at stoppe runden.
             {
                 spiller.PointSamlet();
                 spiller.EndTurn();
             }
 
+            // Tester om pointRunde og PlayerPoint giver mere end vindertallet.
+            // Spillet stopper hvis man har flere point.
             if (spiller.pointRunde + spiller.PlayerPoint >= vinderTal)
             {
                 spiller.PointSamlet();
                 spiller.EndTurn();
                 TjekScore(spiller, computer, vinderTal);
             }
-
         }
     }
     else
@@ -64,13 +69,13 @@ static void Gris(GrisPlayer spiller, GrisPlayer computer, int vinderTal, int com
     {
         if (computer.PlayerPoint + computer.pointRunde < vinderTal && spiller.PlayerPoint + spiller.pointRunde < vinderTal)
         {
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\nComputeren kaster terningerne.");
             Console.ResetColor();
-            Thread.Sleep(500);
+            Thread.Sleep(650);
 
             computer.KastTerningerne();
-            Thread.Sleep(500);
+            Thread.Sleep(650);
 
             if (computer.pointRunde + computer.PlayerPoint >= vinderTal)
             {

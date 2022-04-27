@@ -24,7 +24,7 @@ namespace modul17_opg
 
             if (Terninger.Terning1.show() == 1 && Terninger.Terning2.show() == 1)
             {
-                Thread.Sleep(500);
+                Thread.Sleep(650);
 
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("Begge terninger landede på 1, så du mister alle dine point...");
@@ -35,7 +35,7 @@ namespace modul17_opg
             } 
             else if (Terninger.Terning1.show() == 1 || Terninger.Terning2.show() == 1)
             {
-                Thread.Sleep(500);
+                Thread.Sleep(650);
 
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("Den ene terning landede på 1, så du mister alle point i denne runde...");
@@ -45,7 +45,7 @@ namespace modul17_opg
             }
             else
             {
-                Thread.Sleep(500);
+                Thread.Sleep(650);
 
                 PointDenneRunde();
                 Console.WriteLine($"Samlede point denne runde: {pointRunde}");
@@ -70,7 +70,7 @@ namespace modul17_opg
 
         public int EndTurn()
         {
-            Thread.Sleep(500);
+            Thread.Sleep(650);
 
             pointRunde = 0;
             Færdig = true;

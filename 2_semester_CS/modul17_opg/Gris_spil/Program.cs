@@ -7,7 +7,7 @@ GrisPlayer spiller = new(navn, 0, false, new PairOfDice(new Dice(), new Dice()))
 GrisPlayer computer = new("Computer", 0, false, new PairOfDice(new Dice(), new Dice()));
 
 // Spil Indstillinger
-int vinderTal = 20;
+int vinderTal = 100;
 int computerHandicap = 20;
 
 // Starter spillet:

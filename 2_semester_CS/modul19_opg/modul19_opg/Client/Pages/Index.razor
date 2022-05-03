@@ -1,0 +1,37 @@
+﻿@page "/"
+
+<h1 class="mb-3 mt-3">Add Product</h1>
+ 
+<EditForm EditContext="@EditContext" class="row p-3" OnSubmit="@HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="col-md-12 mb-3">
+      <label for="Name">Name</label>
+      <InputText id="Name" @bind-Value="ProductModel.Name" class="form-control" />
+      <ValidationMessage For="@(() => ProductModel.Name)" />
+   </div>
+   <div class="col-md-6 mb-3">
+      <label for="Price">Price</label>
+      <InputNumber id="Price" @bind-Value="ProductModel.Price" class="form-control" />
+      <ValidationMessage For="@(() => ProductModel.Price)" />
+   </div>
+   <div class="col-md-6 mb-3">
+      <label for="PublishedDate">Published Date</label>
+      <InputDate id="PublishedDate" @bind-Value="ProductModel.PublishedDate" class="form-control" />
+   </div>
+   <div class="col-md-12 mb-3">
+      <label for="Description">Description</label>
+      <InputTextArea id="Description" @bind-Value="ProductModel.Description" class="form-control" />
+   </div>
+   <div class="col-12 mb-3">
+      <div class="form-check">
+         <InputCheckbox id="IsPublished" @bind-Value="ProductModel.IsPublished" class="form-check-input" />
+         <label class="form-check-label" for="IsPublished">
+         Published
+         </label>
+      </div>
+   </div>
+   <div class="col-12 mb-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+   </div>
+</EditForm>

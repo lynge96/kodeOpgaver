@@ -4,7 +4,6 @@ Console.WriteLine(Opgave4.sfd(20, 15));
 Console.WriteLine(Opgave4.nPotens(5, 3));
 Console.WriteLine(Opgave4.GangeToTal(5, 4));
 Console.WriteLine(Opgave4.Reverse("EGAKNANAB"));
-Opgave5.ScanDir("C:\\Users\\lynge\\Desktop\\kodeOpgaver");
 
 // Opgave 3 - Beregn fakultet med rekursion
 class Opgave3 {

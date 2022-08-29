@@ -4,16 +4,18 @@ Console.WriteLine(Opgave4.sfd(20, 15));
 Console.WriteLine(Opgave4.nPotens(5, 3));
 Console.WriteLine(Opgave4.GangeToTal(5, 4));
 Console.WriteLine(Opgave4.Reverse("EGAKNANAB"));
+Console.WriteLine(Opgave5.ScanDirCount("C:\\Users\\Anders\\Desktop\\kodeOpgaver\\3_semester"));
 
 // Opgave 3 - Beregn fakultet med rekursion
 class Opgave3 {
     public static int Faculty(int n) {
        // TODO: Skriv koden til fakultet her!
        int resultat;
+
        if (n <= 1) {
-        resultat = 1;
+            resultat = 1;
        } else {
-        resultat = n * Faculty((n-1)!);
+            resultat = n * Faculty((n-1)!);
        }
        return resultat;
     }
@@ -82,4 +84,22 @@ class Opgave5 {
             ScanDir(subdir.FullName);
         }
     }
+
+    public static int ScanDirCount(string path) {
+        DirectoryInfo dir = new DirectoryInfo(path);
+        FileInfo[] files = dir.GetFiles();
+
+        int count = 0;
+
+        DirectoryInfo[] dirs = dir.GetDirectories();
+
+        foreach (DirectoryInfo subdir in dirs) {
+            count++;
+            count += ScanDirCount(subdir.FullName);
+        }
+
+        return count;
+    }
+
+    
 }

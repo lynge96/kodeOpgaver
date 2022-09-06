@@ -1,10 +1,9 @@
-﻿// I denne opgave skal du lave følgende to Højere Ordens Funktioner:
-
-
+﻿
 var CreateWordReplacerFn = (string[] words, string replacementWord) => {
     // TODO!
-    return () => {
-      var nysætning = words.Contains("");
+    return () =>
+    {
+        var nySætning = words.Contains(words);
     };
 };
 

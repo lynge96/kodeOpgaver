@@ -1,3 +1,4 @@
+using System;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
@@ -22,11 +23,11 @@ app.MapGet("/api/fruit/random", () => frugter[rng.Next(frugter.Length)]);
 // Tilføjer en ny frugt til arrayet.
 app.MapPost("/api/fruit", (Fruit fruit) =>
 {
-  frugter = frugter.Append(fruit.name).ToArray();
+    frugter = frugter.Append(fruit.name).ToArray();
 
-  Console.WriteLine($"Tilføjer frugt: {fruit.name}");
+    Console.WriteLine($"Tilføjer frugt: {fruit.name}");
 
-  return frugter;    
+    return frugter;
 });
 
 app.Run();

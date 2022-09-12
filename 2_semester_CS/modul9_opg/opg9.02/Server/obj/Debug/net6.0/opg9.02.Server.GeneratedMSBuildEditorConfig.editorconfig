@@ -8,13 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = opg9.02.Server
 build_property.RootNamespace = opg9.02.Server
-build_property.ProjectDir = C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\Server\
+build_property.ProjectDir = C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\Server\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lynge\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\Server
+build_property.MSBuildProjectDirectory = C:\Users\Anders\Desktop\kodeOpgaver\2_semester_CS\modul9_opg\opg9.02\Server
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lynge/Desktop/kodeOpgaver/2_semester_CS/modul9_opg/opg9.02/Server/Pages/Error.cshtml]
+[C:/Users/Anders/Desktop/kodeOpgaver/2_semester_CS/modul9_opg/opg9.02/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

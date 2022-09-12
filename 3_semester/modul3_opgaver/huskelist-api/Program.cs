@@ -1,7 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Åben op for "CORS" i din API.
-// Læs om baggrunden her: https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-6.0
+// Ã…ben op for "CORS" i din API.
+// LÃ¦s om baggrunden her: https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-6.0
 
 var AllowCors = "_AllowCors";
 builder.Services.AddCors(options =>
@@ -19,9 +19,9 @@ app.UseCors(AllowCors);
 int nextID = 0;
 
 Tasks[] ToDoListe = new Tasks[] {
-  new Tasks {Id = nextID++, Text = "støvsug", Done = false},
+  new Tasks {Id = nextID++, Text = "stÃ¸vsug", Done = false},
   new Tasks {Id = nextID++, Text = "vask gulv", Done = false},
-  new Tasks {Id = nextID++, Text = "tøjvask", Done = true}
+  new Tasks {Id = nextID++, Text = "tÃ¸jvask", Done = true}
 };
 
 app.MapGet("/api/tasks", () => ToDoListe);

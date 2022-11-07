@@ -28,7 +28,7 @@
             var min = 0;
             var max = array.Length - 1;
 
-            while (min < max) {
+            while (min <= max) {
                 var mid = (min + max) / 2;
 
                 if (tal == array[mid]) {
@@ -67,7 +67,13 @@
         /// <returns>En kopi af det sorterede array med det nye tal i.</returns>
         public static int[] InsertSorted(int tal) {
             // TODO: Implement!
-            
+            for (int i = 0; i < sortedArray.Length; i++){
+                if (sortedArray[i] >= tal) {
+                    next = sortedArray[i];
+                    sortedArray[i] = tal;
+                }
+            }
+
             return sortedArray;
         }
     }

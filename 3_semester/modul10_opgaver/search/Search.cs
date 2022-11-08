@@ -66,15 +66,34 @@
         /// <param name="tal">Tallet der skal indsættes</param>
         /// <returns>En kopi af det sorterede array med det nye tal i.</returns>
         public static int[] InsertSorted(int tal) {
-            // TODO: Implement!
-            for (int i = 0; i < sortedArray.Length; i++){
-                if (sortedArray[i] >= tal) {
-                    next = sortedArray[i];
-                    sortedArray[i] = tal;
+            
+            int next = FindNumberLinear(sortedArray, -1);
+
+            if (next == -1)
+            {
+                return sortedArray;
+            }
+            else
+            {
+                sortedArray[next] = tal;
+
+                for (int i = 0; i <= next; i++)
+                {
+                    int temp = sortedArray[i];
+
+                    for (int j = i + 1; j <= next; j++)
+                    {
+                        if (sortedArray[i] > sortedArray[j])
+                        {
+                            sortedArray[i] = sortedArray[j];
+                            sortedArray[j] = temp;
+                        }
+                    }
                 }
+
+                return sortedArray;
             }
 
-            return sortedArray;
         }
     }
 }

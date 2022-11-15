@@ -1,0 +1,3 @@
+﻿using Sortering;
+
+SortTester.Run();

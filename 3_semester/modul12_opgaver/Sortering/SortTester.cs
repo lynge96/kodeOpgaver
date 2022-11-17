@@ -6,7 +6,7 @@ public class SortTester
 {
     public static void Run()
     {
-        int testSize = 100000;
+        int testSize = 1000000;
         int Min = 0;
         int Max = 10000;
         Random randNum = new Random();
@@ -23,15 +23,15 @@ public class SortTester
         int[] bigArray5 = (int[]) bigArray.Clone();
 
         Stopwatch stopWatch = new Stopwatch();
+        TimeSpan ts = stopWatch.Elapsed;
+        string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            ts.Hours, ts.Minutes, ts.Seconds,
+            ts.Milliseconds / 10);
         
         // Bubble Sort Test
         stopWatch.Start();
         BubbleSort.Sort(bigArray1);
         stopWatch.Stop();
-        TimeSpan ts = stopWatch.Elapsed;
-        string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
-            ts.Hours, ts.Minutes, ts.Seconds,
-            ts.Milliseconds / 10);
         Console.WriteLine("BubbleSort " + elapsedTime);
 
         // Insertion Sort Test

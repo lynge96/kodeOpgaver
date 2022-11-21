@@ -43,10 +43,15 @@ public class HashSetChaining : HashSet
 
     public bool Add(Object x)
     {
-        int h = HashValue(x);
+        if (currentSize > buckets.Length * 0.75)
+        {
+            Rehash();
+        }
 
+        int h = HashValue(x);
         Node bucket = buckets[h];
         bool found = false;
+     
         while (!found && bucket != null)
         {
             if (bucket.Data.Equals(x))
@@ -65,8 +70,31 @@ public class HashSetChaining : HashSet
             buckets[h] = newNode;
             currentSize++;
         }
+    
 
-        return !found;
+        return found;
+    }
+
+    public void Rehash()
+    {
+        // Laver et array med dobbelt størrelse
+        int doubleSize = buckets.Length * 2;
+        HashSetChaining doubleArray = new HashSetChaining(doubleSize);
+
+        // Tilføjer de gamle elementer til det nye array.
+        for (int i = 0; i < buckets.Length; i++)
+        {
+            Node temp = buckets[i];
+
+            while (temp != null)
+            {
+                doubleArray.Add(temp.Data);
+                temp = temp.Next;
+            }   
+        }
+
+        // Overskriver buckets variablen
+        buckets = doubleArray.buckets;
     }
 
     public bool Remove(Object x)

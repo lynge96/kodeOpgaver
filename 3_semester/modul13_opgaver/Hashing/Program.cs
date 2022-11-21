@@ -1,6 +1,6 @@
 ﻿using Hashing;
 
-HashSet names = new HashSetLinearProbing(13);
+HashSet names = new HashSetChaining(13);
 
 names.Add("Harry");
 names.Add("Sue");

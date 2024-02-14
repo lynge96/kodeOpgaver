@@ -43,6 +43,7 @@ def generate_next_population(parents):
 
     return next_population[:population_size]
 
+
 # Initialization
 current_population = [generate_random_string(len(target_string)) for _ in range(population_size)]
 generation = 0

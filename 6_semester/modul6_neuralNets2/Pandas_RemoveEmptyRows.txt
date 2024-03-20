@@ -1,0 +1,7 @@
+# Something like this:
+
+#import numpy as np
+#print(data.shape)
+#data.replace("", np.nan, inplace=True)
+#data.dropna(how='any', axis=0, inplace=True)
+#print(data.shape)

@@ -3,6 +3,7 @@
 # import panda library and a few others we will need.
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split  # Import train_test_split function
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor  # Import Random Forest Classifier
@@ -44,14 +45,8 @@ data = pd.read_csv('titanic_800.csv', sep=',', header=0)
 data = impute_missing_age(data)
 
 # Remove 'Cabin', 'Name', and 'Ticket' columns from the data
-columns_to_drop = ['Cabin', 'Name', 'Ticket']
+columns_to_drop = ['Cabin', 'Name', 'Ticket', 'Embarked', 'SibSp', 'Parch']
 data.drop(columns_to_drop, axis=1, inplace=True)
-
-# Define custom mapping dictionary
-embarked_mapping = {'C': 0, 'Q': 1, 'S': 2}
-
-# Map 'Embarked' values to numerical values using the custom mapping
-data['Embarked'] = data['Embarked'].map(embarked_mapping)
 
 # Handling missing values for 'Pclass' and 'Survived' columns
 data['Pclass'].fillna(3, inplace=True)
@@ -83,7 +78,7 @@ plt.show()
 data.drop('Survived', axis=1, inplace=True)
 
 # Split data into training and testing sets
-xtrain, xtest, ytrain, ytest = train_test_split(data, yvalues, test_size=0.2, random_state=42)
+xtrain, xtest, ytrain, ytest = train_test_split(data, yvalues, test_size=0.1, random_state=42)
 
 # Scale feature data
 scaler = StandardScaler()
@@ -107,8 +102,6 @@ predictions_labels = pd.Series(predictions).replace({0: 'died', 1: 'survived'})
 matrix = confusion_matrix(ytest_labels, predictions_labels)
 print(matrix)
 print(classification_report(ytest_labels, predictions_labels))
-
-import seaborn as sns
 
 # Convert confusion matrix to DataFrame for better visualization
 confusion_df = pd.DataFrame(matrix, index=['Actual Died', 'Actual Survived'], columns=['Predicted Died', 'Predicted Survived'])

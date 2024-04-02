@@ -45,8 +45,14 @@ data = pd.read_csv('titanic_800.csv', sep=',', header=0)
 data = impute_missing_age(data)
 
 # Remove 'Cabin', 'Name', and 'Ticket' columns from the data
-columns_to_drop = ['Cabin', 'Name', 'Ticket', 'Embarked', 'SibSp', 'Parch']
+columns_to_drop = ['Cabin', 'Name', 'Ticket']
 data.drop(columns_to_drop, axis=1, inplace=True)
+
+# Define custom mapping dictionary
+embarked_mapping = {'C': 0, 'Q': 1, 'S': 2}
+
+# Map 'Embarked' values to numerical values using the custom mapping
+data['Embarked'] = data['Embarked'].map(embarked_mapping)
 
 # Handling missing values for 'Pclass' and 'Survived' columns
 data['Pclass'].fillna(3, inplace=True)

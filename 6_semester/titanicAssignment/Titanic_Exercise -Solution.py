@@ -84,7 +84,7 @@ plt.show()
 data.drop('Survived', axis=1, inplace=True)
 
 # Split data into training and testing sets
-xtrain, xtest, ytrain, ytest = train_test_split(data, yvalues, test_size=0.1, random_state=42)
+xtrain, xtest, ytrain, ytest = train_test_split(data, yvalues, test_size=0.2, random_state=42)
 
 # Scale feature data
 scaler = StandardScaler()

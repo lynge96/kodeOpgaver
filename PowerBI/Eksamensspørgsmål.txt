@@ -1,24 +1,36 @@
 1 .Redegør for de 6 designspørgsmål og giv eksempler på anvendelsen udfra én af de 3 cases.
 	
-	Slides + PowerBI visualiserings eksempel(**MANGLER**)
+	Slide 2 + PowerBI visualiserings eksempel(**MANGLER**)
 
 
 2. Redegør for de 3 væsentlige komponenterne / Views i PowerBI Desktop og giv eksempler på anvendelsen ud fra én af de 3 cases.
 
+	Slide 3 + eksempel "Aarstiderne" >> Table View(DIM_Kunder), Model View(Relationer og tabeller), Report View(Vis visualiseringer 	og andet funktionalitet)
+
 
 3. Redegør for 3 BI komponenter, som giver værdi for en virksomhed og giv eksemper på anvendelse ud fra én af de 3 cases.
+
+	Slide 4 + eksempel(**MANGLER**)
 
 
 4. Redegør for StarSchema og hvorfor vi bruger det samt giv eksempler på anvendelse i én af de 3 cases.
 
+	Slide 5 + "Aarstiderne" STAR schema >> udgangspunkt i FACT_Ordrer
+
 
 5. Redegør for kendetegn for FACT og DIM tabeller samt relationerne 1-1, 1 – Mange samt Mange – Mange og giv eksempler herpå fra én af de 3 cases.
+
+	Slide 6 + "Fit2Go" Relationstyper
 
 
 6. Hvad bruges DAX sproget til og giv eksempler herpå ud fra én af de 3 cases – kom ind på Beregnede kolonner samt Global Measures.
 
+	Slide 7 + "Fit2Go" >> Beregnede Kolonner - Kunder(Loyal) >> Global Measures
+
 
 7. Hvad er Customer Lifetime Value og giv eksempler på det i én af de 3 cases.
+
+	Slide 8 + "Aarstiderne" >> CLV measures
 
 
 8. Aarstiderne Case – redegør for problemstillinger og kom med hypoteser samt gennemgå løsninger i PowerBI Desktop.
